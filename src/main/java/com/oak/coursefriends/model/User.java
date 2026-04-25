@@ -3,9 +3,11 @@ package com.oak.coursefriends.model;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Column;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Table;
 import jakarta.persistence.GenerationType;
+import java.util.List;
 
 @Entity
 @Table(name="users")
@@ -17,6 +19,9 @@ public class User {
 
     @Column(name="name", nullable = false)
     private String username;
+
+    @OneToMany(mappedBy = "user")
+    private List<Schedule> schedules;
 
     public User(){}
 
@@ -35,6 +40,13 @@ public class User {
     }
     public void setId(Long id){
         this.id = id;
+    }
+
+    public List<Schedule> getSchedules(){
+        return schedules;
+    }
+    public void setSchedule(List<Schedule> schedules){
+        this.schedules = schedules;
     }
 
 }
