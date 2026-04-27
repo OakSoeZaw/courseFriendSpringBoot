@@ -9,6 +9,8 @@ import jakarta.persistence.Table;
 import jakarta.persistence.GenerationType;
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 @Entity
 @Table(name="users")
 public class User {
@@ -20,6 +22,7 @@ public class User {
     @Column(name="name", nullable = false)
     private String username;
 
+    @JsonIgnore
     @OneToMany(mappedBy = "user")
     private List<Schedule> schedules;
 

@@ -15,7 +15,11 @@ public class ScheduleService {
     }
 
     public List<Schedule> getScheduleByUserId(Long userId){
-        return scheduleRepository.findbyUserId(userId);
+        return scheduleRepository.findByUser_Id(userId);
+    }
+
+    public List<Schedule> getUsersByCourseCode(String courseCode){
+        return scheduleRepository.findByCourse_Code(courseCode);
     }
 
     public Schedule addCourseToSchedule(Schedule schedule){

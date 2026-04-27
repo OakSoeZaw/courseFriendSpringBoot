@@ -36,4 +36,9 @@ public class ScheduleController {
     public void removeCourseFromSchdeule(@PathVariable Long id){
         scheduleService.removeCourseFromSchedule(id);
     }
+
+    @GetMapping("/course/{courseCode}")
+    public List<Schedule> getUsersByCourseCode(@PathVariable String courseCode){
+        return scheduleService.getUsersByCourseCode(courseCode);
+    }
 }

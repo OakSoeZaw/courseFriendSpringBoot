@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Register — CourseFriends</title>
+</head>
+
+<body>
+    <div class="auth-wrap">
+        <p class="auth-title"> Create Account</p>
+        <p class="auth-sub">Join CourseFriends</p>
+        <div class="card">
+            <div class="form">
+                <label for="username">Username </label>
+                <input type="text" id="username" placeholder="your username" />
+            </div>
+            <p id="error" class="error" style="display: none"></p>
+            <button class="btn-primary" onclick="register()">Create Account</button>
+            <hr class="divider" />
+            <p>Already have an account?</p> <button class="link-btn" onclick="location.href='login.html'">Sign
+                in</button></p>
+        </div>
+    </div>
+
+    <script>
+        async function register() {
+            const username = document.getElementById('username').value.trim();
+            const error = document.getElementById('error');
+            error.style.display = 'none';
+
+            if (!username) {
+                error.textContent = 'Please enter your usernmae';
+                error.style.display = 'block';
+                return;
+            }
+
+            try {
+                const res = await fetch(`/api/users`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ username })
+                });
+                if (!res.ok) {
+                    error.textContent = 'Username already taken or invalid';
+                    error.style.display = 'block';
+                    return;
+                }
+                const user = await res.json();
+                localStorage.setItem('userId', user.id);
+                localStorage.setItem('username', user.username);
+                location.href = 'schedule.html';
+            } catch (e) {
+                error.textContent = 'Could not connect to server';
+                error.style.display = 'block';
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>

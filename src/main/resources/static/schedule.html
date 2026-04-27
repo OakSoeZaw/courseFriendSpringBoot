@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Schedule — CourseFriends</title>
+</head>
+
+<body>
+    <nav>
+        <a class="nav-logo" href="schedule.html">CourseFriends</a>
+        <div class="nav-links">
+            <a href="schedule.html" class="nav-link">My Schedule</a>
+            <a href="courses.html" class="nav-link">Browse courses</a>
+            <a href="friends.html" class="nav-link">Friends</a>
+        </div>
+        <div class="nav-right">
+            <span id="nav-user" style=" font-size:13px;color:var(--muted)"></span>
+            <button class="btn btn-sm" onclick="logout()">Sign out</button>
+        </div>
+    </nav>
+
+    <div class="main">
+        <p class="page-title">My Schedule</p>
+        <div class="card">
+            <p class="section-label">Enrolled courses</p>
+            <div id="schedule-list">
+                <p class="msg">Loading...</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const userId = localStorage.getItem('userId');
+        const username = localStorage.getItem('username');
+
+        if (!userId) location.href = 'login.html';
+
+        document.getElementById('nav-user').textContent = username || '';
+
+        async function loadSchedule() {
+            const list = document.getElementById("schedule-list");
+            try {
+                const res = await fetch(`/api/schedules/user/${userId}`);
+                const schedules = await res.json();
+
+                if (schedules.length === 0) {
+                    list.innerHTML = '<p class="empty">No courses yet. <a href="courses.html" style="color:var(--accent)">Browse courses</a></p>';
+                    return;
+                }
+
+                list.innerHTML = schedules.map(s => `
+                <div class = "row">
+                    <span class="course-code">${s.course.code}</span>
+                    <span class="course-title">${s.course.title}</span>
+                    <button class = "btn-remove" onclick="remove(${s.id})">Remove</button>
+                </div>`).join('');
+            } catch (e) {
+                list.innerHTML = '<p class="error">Failed to load schedule.</p>';
+            }
+        }
+
+        async function remove(scheduleId) {
+            await fetch(`/api/schedules/${scheduleId}`, { method: 'DELETE' });
+            loadSchedule();
+        }
+
+        function logout() {
+            localStorage.clear();
+            location.href = 'login.html';
+        }
+
+        loadSchedule();
+
+    </script>
+
+
+</body>
+
+</html>

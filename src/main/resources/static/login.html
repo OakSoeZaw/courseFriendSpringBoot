@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Login — CourseFriends</title>
+</head>
+
+<body>
+    <div class="auth-wrap">
+        <p class="auth-title"> Welcome Back</p>
+        <p class="auth-sub">Sign in to your account</p>
+        <div class="card">
+            <div class="form">
+                <label for="username">Username </label>
+                <input type="text" id="username" placeholder="your username" />
+            </div>
+            <p id="error" class="error" style="display: none"></p>
+            <button class="btn-primary" onclick="login()">Sign in</button>
+            <hr class="divider" />
+            <p>No account? <button class="link-btn" onclick="location.href='register.html'">Register</button></p>
+        </div>
+    </div>
+
+    <script>
+        async function login() {
+            const username = document.getElementById('username').value.trim();
+            const error = document.getElementById('error');
+            error.style.display = 'none';
+
+            if (!username) {
+                error.textContent = 'Please enter your usernmae';
+                error.style.display = 'block';
+                return;
+            }
+
+            try {
+                const res = await fetch(`/api/users/username/${username}`);
+                if (!res.ok) {
+                    error.textContent = 'User not found';
+                    error.style.display = 'block';
+                    return;
+                }
+                const user = await res.json();
+                localStorage.setItem('userId', user.id);
+                localStorage.setItem('username', user.username);
+                location.href = 'schedule.html';
+            } catch (e) {
+                error.textContent = 'Could not connect to server';
+                error.style.display = 'block';
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>

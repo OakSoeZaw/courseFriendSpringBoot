@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Friends — CourseFriends</title>
+</head>
+
+<body>
+    <nav>
+        <a class="nav-logo" href="schedule.html">CourseFriends</a>
+        <div class="nav-links">
+            <a href="schedule.html" class="nav-link">My Schedule</a>
+            <a href="courses.html" class="nav-link">Browse courses</a>
+            <a href="friends.html" class="nav-link">Friends</a>
+        </div>
+        <div class="nav-right">
+            <span id="nav-user" style=" font-size:13px;color:var(--muted)"></span>
+            <button class="btn btn-sm" onclick="logout()">Sign out</button>
+        </div>
+    </nav>
+
+    <div class="main">
+        <p class="page-title">Friends in my courses</p>
+        <div id="friends-list">
+            <p class="msg">Loading...</p>
+        </div>
+    </div>
+
+    <script>
+        const userId = localStorage.getItem('userId');
+        const username = localStorage.getItem('username');
+
+        if (!userId) location.href = 'login.html';
+        document.getElementById('nav-user').textContent = username || '';
+
+        function initials(name) {
+            return name.slice(0, 2).toUpperCase();
+        }
+
+        async function loadFriends() {
+            const container = document.getElementById('friends-list');
+            try {
+                const res = await fetch(`/api/schedules/user/${userId}`);
+                const mySchedule = await res.json();
+
+                if (mySchedule.length === 0) {
+                    container.innerHTML = '<p class="empty"> You have no courses yet. <a href="courses.html" style="color:var(--accent)">Add some courses</a></p>';
+                    return;
+                }
+
+                const sections = await Promise.all(mySchedule.map(async s => {
+                    const allRes = await fetch(`/api/schedules/course/${s.course.code}`);
+                    const allEnrolled = await allRes.json();
+                    const others = allEnrolled.filter(e => String(e.user.id) !== String(userId));
+                    return { course: s.course, others };
+                }));
+
+                container.innerHTML = sections.map(({ course, others }) => `
+                <div class="card">
+                    <p class="section-label">${course.code} — ${course.title}</p>
+                    ${others.length === 0
+                        ? '<p class="empty" style="padding:0.75rem 0">No other users enrolled yet</p>'
+                        : others.map(e => `
+                        <div class="row">
+                            <div class="avatar">${initials(e.user.username)}</div>
+                            <span style="font-size:14px">${e.user.username}</span>
+                        </div>
+                        `).join('')
+                    }
+                </div>
+                `).join('');
+            } catch (e) {
+                container.innerHTML = '<p class="error">Failed to load friends.</p>';
+            }
+        }
+
+        function logout() {
+            localStorage.clear();
+            location.href = 'login.html';
+        }
+
+        loadFriends();
+    </script>
+
+
+</body>

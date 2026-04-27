@@ -9,8 +9,10 @@ import jakarta.persistence.Table;
 import jakarta.persistence.GenerationType;
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 @Entity
-@Table(name="courses")
+@Table(name = "courses")
 public class Course {
 
     @Id
@@ -23,37 +25,48 @@ public class Course {
     @Column(name = "title", nullable = false)
     private String title;
 
+    @JsonIgnore
     @OneToMany(mappedBy = "course")
     private List<Schedule> schedules;
 
-    public Course(){}
+    public Course() {
+    }
 
-    public Course(String code, String title){
+    public Course(String code, String title) {
         this.code = code;
         this.title = title;
     }
 
-    //getter and setter
-    public Long getId() { return id; }
-    public void setId(Long id) { this.id = id; }
-    public String getCode(){
+    // getter and setter
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getCode() {
         return code;
     }
-    public void setCode(String code){
+
+    public void setCode(String code) {
         this.code = code;
     }
 
-    public String getTitle(){
+    public String getTitle() {
         return title;
     }
-    public void setTitle(String title){
+
+    public void setTitle(String title) {
         this.title = title;
     }
 
-    public void setCourses(List<Schedule> schedules){
+    public void setCourses(List<Schedule> schedules) {
         this.schedules = schedules;
     }
-    public List<Schedule> getSchedules(){
+
+    public List<Schedule> getSchedules() {
         return schedules;
     }
 }

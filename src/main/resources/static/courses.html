@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Browse Courses — CourseFriends</title>
+</head>
+
+<body>
+    <nav>
+        <a class="nav-logo" href="schedule.html">CourseFriends</a>
+        <div class="nav-links">
+            <a href="schedule.html" class="nav-link">My Schedule</a>
+            <a href="courses.html" class="nav-link">Browse courses</a>
+            <a href="friends.html" class="nav-link">Friends</a>
+        </div>
+        <div class="nav-right">
+            <span id="nav-user" style=" font-size:13px;color:var(--muted)"></span>
+            <button class="btn btn-sm" onclick="logout()">Sign out</button>
+        </div>
+    </nav>
+
+    <div class="main">
+        <p class="page-title">Browse courses</p>
+        <div class="search-row">
+            <input type="text" id="search" placeholder="Search by code or title" oninput="filterCourses()" />
+        </div>
+        <div class="card">
+            <div id="course-list">
+                <p class="msg">Loading...</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const userId = localStorage.getItem('userId');
+        const username = localStorage.getItem('username');
+
+        if (!userId) location.href = 'login.html';
+        document.getElementById('nav-user').textContent = username || '';
+
+        let allCourses = [];
+        let enrolledIds = new Set();
+
+
+        async function loadCourses() {
+            const list = document.getElementById('course-list');
+            try {
+                const [coursesRes, scheduleRes] = await Promise.all([
+                    fetch('/api/courses'),
+                    fetch(`/api/schedules/user/${userId}`)
+                ]);
+
+                allCourses = await coursesRes.json();
+                const schedules = await scheduleRes.json();
+                enrolledIds = new Set(schedules.map(s => s.course.id));
+
+                renderCourses(allCourses);
+            } catch (e) {
+                list.innerHTML = '<p class="error">Failed to load courses.</p>';
+            }
+        }
+
+        function renderCourses(courses) {
+            const list = document.getElementById('course-list');
+            if (courses.length === 0) {
+                list.innerHTML = '<p class= "empty">No courses found.</p>';
+                return;
+            }
+
+            list.innerHTML = courses.map(c =>
+                `
+                <div class="row">
+                    <span class = "course-code">${c.code}</span>
+                    <span class= "course-title">${c.title}</span>
+                    ${enrolledIds.has(c.id)
+                    ? '<span class="badge">Enrolled</span>'
+                    : `<button class="btn-add" onclick="enroll(${c.id})"> Add</button>`
+                }
+                </div>`).join('');
+        }
+
+        function filterCourses() {
+            const q = document.getElementById('search').value.toLowerCase();
+            const filtered = allCourses.filter(c =>
+                c.code.toLowerCase().includes(q) || c.title.toLowerCase().includes(q)
+            );
+            renderCourses(filtered);
+        }
+        async function enroll(courseId) {
+            await fetch('/api/schedules', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ user: { id: userId }, course: { id: courseId } })
+            });
+            loadCourses();
+        }
+
+        function logout() {
+            localStorage.clear();
+            location.href = 'login.html';
+        }
+
+        loadCourses();
+
+
+    </script>
+</body>
