@@ -17,7 +17,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.times;
 
 import java.util.List;
-import java.util.Optional;
 
 @ExtendWith(MockitoExtension.class)
 public class ScheduleServiceTest {

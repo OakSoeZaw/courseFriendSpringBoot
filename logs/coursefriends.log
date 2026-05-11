@@ -718,3 +718,562 @@
 2026-05-10 20:18:59 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 2026-05-10 20:18:59 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2026-05-10 20:18:59 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-10 20:48:02 [main] INFO  c.o.c.CoursefriendsApplicationTests - Starting CoursefriendsApplicationTests using Java 23 with PID 93816 (started by oaksoe in /Users/oaksoe/coursefriends)
+2026-05-10 20:48:02 [main] INFO  c.o.c.CoursefriendsApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2026-05-10 20:48:03 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-10 20:48:03 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 28 ms. Found 3 JPA repository interfaces.
+2026-05-10 20:48:03 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-10 20:48:03 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.49.Final
+2026-05-10 20:48:03 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-05-10 20:48:03 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-10 20:48:03 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-10 20:48:03 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3f706310
+2026-05-10 20:48:03 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-10 20:48:04 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-10 20:48:04 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 18.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-10 20:48:04 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-10 20:48:04 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-10 20:48:05 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-10 20:48:05 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2026-05-10 20:48:05 [main] INFO  c.o.c.CoursefriendsApplicationTests - Started CoursefriendsApplicationTests in 3.329 seconds (process running for 4.135)
+2026-05-10 20:48:05 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.oak.coursefriends.controllers.UserControllerTest]: UserControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-10 20:48:05 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.oak.coursefriends.CoursefriendsApplication for test class com.oak.coursefriends.controllers.UserControllerTest
+2026-05-10 20:48:05 [main] INFO  m.p.s.DotenvPropertySource - Initialized Dotenv with DotenvConfig{directory=null, filename=null, ignoreIfMalformed=false, ignoreIfMissing=true, systemProperties=false, prefix=null}
+2026-05-10 20:48:05 [main] INFO  c.o.c.controllers.UserControllerTest - Starting UserControllerTest using Java 23 with PID 93816 (started by oaksoe in /Users/oaksoe/coursefriends)
+2026-05-10 20:48:05 [main] INFO  c.o.c.controllers.UserControllerTest - No active profile set, falling back to 1 default profile: "default"
+2026-05-10 20:48:06 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2026-05-10 20:48:06 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-05-10 20:48:06 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-05-10 20:48:06 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2026-05-10 20:48:06 [main] INFO  c.o.c.controllers.UserControllerTest - Started UserControllerTest in 0.303 seconds (process running for 4.765)
+2026-05-10 20:48:06 [main] INFO  c.o.c.services.UserService - Creating user: john
+2026-05-10 20:48:06 [main] INFO  c.o.c.services.UserService - Looking up user by username: unknown
+2026-05-10 20:48:06 [main] WARN  c.o.c.services.UserService - Deleting user with id: 1
+2026-05-10 20:48:06 [main] INFO  c.o.c.services.UserService - Looking up user by username: john
+2026-05-10 20:48:06 [main] INFO  c.o.c.services.CourseService - Fetching all courses
+2026-05-10 20:48:06 [main] WARN  c.o.c.services.CourseService - Deleting course with id: 1
+2026-05-10 20:48:06 [main] INFO  c.o.c.services.CourseService - Creating course: CS101
+2026-05-10 20:48:06 [main] WARN  c.o.c.services.ScheduleService - Removing schedule entry id: 1
+2026-05-10 20:48:06 [main] INFO  c.o.c.services.ScheduleService - Adding course to schdule for user id: null
+2026-05-10 20:48:06 [main] INFO  c.o.c.services.ScheduleService - Fetching schedule for user id: 1
+2026-05-10 20:48:06 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-10 20:48:06 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-10 20:48:06 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-10 21:01:46 [main] INFO  c.o.c.CoursefriendsApplicationTests - Starting CoursefriendsApplicationTests using Java 23 with PID 97882 (started by oaksoe in /Users/oaksoe/coursefriends)
+2026-05-10 21:01:46 [main] INFO  c.o.c.CoursefriendsApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2026-05-10 21:01:46 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-10 21:01:46 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 29 ms. Found 3 JPA repository interfaces.
+2026-05-10 21:01:46 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-10 21:01:46 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.49.Final
+2026-05-10 21:01:46 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-05-10 21:01:47 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-10 21:01:47 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-10 21:01:47 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@28c319a2
+2026-05-10 21:01:47 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-10 21:01:47 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-10 21:01:47 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 18.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-10 21:01:48 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-10 21:01:48 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-10 21:01:48 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-10 21:01:48 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2026-05-10 21:01:48 [main] INFO  c.o.c.CoursefriendsApplicationTests - Started CoursefriendsApplicationTests in 3.021 seconds (process running for 3.822)
+2026-05-10 21:01:49 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.oak.coursefriends.controllers.UserControllerTest]: UserControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-10 21:01:49 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.oak.coursefriends.CoursefriendsApplication for test class com.oak.coursefriends.controllers.UserControllerTest
+2026-05-10 21:01:49 [main] INFO  m.p.s.DotenvPropertySource - Initialized Dotenv with DotenvConfig{directory=null, filename=null, ignoreIfMalformed=false, ignoreIfMissing=true, systemProperties=false, prefix=null}
+2026-05-10 21:01:49 [main] INFO  c.o.c.controllers.UserControllerTest - Starting UserControllerTest using Java 23 with PID 97882 (started by oaksoe in /Users/oaksoe/coursefriends)
+2026-05-10 21:01:49 [main] INFO  c.o.c.controllers.UserControllerTest - No active profile set, falling back to 1 default profile: "default"
+2026-05-10 21:01:49 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2026-05-10 21:01:49 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-05-10 21:01:49 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-05-10 21:01:49 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2026-05-10 21:01:49 [main] INFO  c.o.c.controllers.UserControllerTest - Started UserControllerTest in 0.308 seconds (process running for 4.434)
+2026-05-10 21:01:49 [main] INFO  c.o.c.services.UserService - Creating user: john
+2026-05-10 21:01:49 [main] INFO  c.o.c.services.UserService - Looking up user by username: unknown
+2026-05-10 21:01:49 [main] WARN  c.o.c.services.UserService - Deleting user with id: 1
+2026-05-10 21:01:49 [main] INFO  c.o.c.services.UserService - Looking up user by username: john
+2026-05-10 21:01:49 [main] INFO  c.o.c.services.CourseService - Fetching all courses
+2026-05-10 21:01:49 [main] WARN  c.o.c.services.CourseService - Deleting course with id: 1
+2026-05-10 21:01:49 [main] INFO  c.o.c.services.CourseService - Creating course: CS101
+2026-05-10 21:01:49 [main] WARN  c.o.c.services.ScheduleService - Removing schedule entry id: 1
+2026-05-10 21:01:49 [main] INFO  c.o.c.services.ScheduleService - Adding course to schdule for user id: null
+2026-05-10 21:01:49 [main] INFO  c.o.c.services.ScheduleService - Fetching schedule for user id: 1
+2026-05-10 21:01:49 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-10 21:01:49 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-10 21:01:49 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-10 21:02:24 [main] INFO  c.o.c.CoursefriendsApplicationTests - Starting CoursefriendsApplicationTests using Java 23 with PID 98312 (started by oaksoe in /Users/oaksoe/coursefriends)
+2026-05-10 21:02:24 [main] INFO  c.o.c.CoursefriendsApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2026-05-10 21:02:24 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-10 21:02:24 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 29 ms. Found 3 JPA repository interfaces.
+2026-05-10 21:02:25 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-10 21:02:25 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.49.Final
+2026-05-10 21:02:25 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-05-10 21:02:25 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-10 21:02:25 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-10 21:02:25 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1305f8e3
+2026-05-10 21:02:25 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-10 21:02:25 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-10 21:02:25 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 18.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-10 21:02:26 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-10 21:02:26 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-10 21:02:27 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-10 21:02:27 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2026-05-10 21:02:27 [main] INFO  c.o.c.CoursefriendsApplicationTests - Started CoursefriendsApplicationTests in 3.621 seconds (process running for 4.509)
+2026-05-10 21:02:27 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.oak.coursefriends.controllers.UserControllerTest]: UserControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-10 21:02:27 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.oak.coursefriends.CoursefriendsApplication for test class com.oak.coursefriends.controllers.UserControllerTest
+2026-05-10 21:02:27 [main] INFO  m.p.s.DotenvPropertySource - Initialized Dotenv with DotenvConfig{directory=null, filename=null, ignoreIfMalformed=false, ignoreIfMissing=true, systemProperties=false, prefix=null}
+2026-05-10 21:02:27 [main] INFO  c.o.c.controllers.UserControllerTest - Starting UserControllerTest using Java 23 with PID 98312 (started by oaksoe in /Users/oaksoe/coursefriends)
+2026-05-10 21:02:27 [main] INFO  c.o.c.controllers.UserControllerTest - No active profile set, falling back to 1 default profile: "default"
+2026-05-10 21:02:28 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2026-05-10 21:02:28 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-05-10 21:02:28 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-05-10 21:02:28 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2026-05-10 21:02:28 [main] INFO  c.o.c.controllers.UserControllerTest - Started UserControllerTest in 0.359 seconds (process running for 5.215)
+2026-05-10 21:02:28 [main] INFO  c.o.c.services.UserService - Creating user: john
+2026-05-10 21:02:28 [main] INFO  c.o.c.services.UserService - Looking up user by username: unknown
+2026-05-10 21:02:28 [main] WARN  c.o.c.services.UserService - Deleting user with id: 1
+2026-05-10 21:02:28 [main] INFO  c.o.c.services.UserService - Looking up user by username: john
+2026-05-10 21:02:28 [main] INFO  c.o.c.services.CourseService - Fetching all courses
+2026-05-10 21:02:28 [main] WARN  c.o.c.services.CourseService - Deleting course with id: 1
+2026-05-10 21:02:28 [main] INFO  c.o.c.services.CourseService - Creating course: CS101
+2026-05-10 21:02:28 [main] WARN  c.o.c.services.ScheduleService - Removing schedule entry id: 1
+2026-05-10 21:02:28 [main] INFO  c.o.c.services.ScheduleService - Adding course to schdule for user id: null
+2026-05-10 21:02:28 [main] INFO  c.o.c.services.ScheduleService - Fetching schedule for user id: 1
+2026-05-10 21:02:28 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-10 21:02:28 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-10 21:02:28 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-10 21:10:12 [main] INFO  c.o.c.CoursefriendsApplicationTests - Starting CoursefriendsApplicationTests using Java 23 with PID 239 (started by oaksoe in /Users/oaksoe/coursefriends)
+2026-05-10 21:10:12 [main] INFO  c.o.c.CoursefriendsApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2026-05-10 21:10:13 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-10 21:10:13 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 27 ms. Found 3 JPA repository interfaces.
+2026-05-10 21:10:13 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-10 21:10:13 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.49.Final
+2026-05-10 21:10:13 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-05-10 21:10:14 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-10 21:10:14 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-10 21:10:14 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3878672c
+2026-05-10 21:10:14 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-10 21:10:14 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-10 21:10:14 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 18.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-10 21:10:14 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-10 21:10:15 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-10 21:10:15 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-10 21:10:15 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2026-05-10 21:10:15 [main] INFO  c.o.c.CoursefriendsApplicationTests - Started CoursefriendsApplicationTests in 3.11 seconds (process running for 3.923)
+2026-05-10 21:10:15 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.oak.coursefriends.controllers.UserControllerTest]: UserControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-10 21:10:16 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.oak.coursefriends.CoursefriendsApplication for test class com.oak.coursefriends.controllers.UserControllerTest
+2026-05-10 21:10:16 [main] INFO  m.p.s.DotenvPropertySource - Initialized Dotenv with DotenvConfig{directory=null, filename=null, ignoreIfMalformed=false, ignoreIfMissing=true, systemProperties=false, prefix=null}
+2026-05-10 21:10:16 [main] INFO  c.o.c.controllers.UserControllerTest - Starting UserControllerTest using Java 23 with PID 239 (started by oaksoe in /Users/oaksoe/coursefriends)
+2026-05-10 21:10:16 [main] INFO  c.o.c.controllers.UserControllerTest - No active profile set, falling back to 1 default profile: "default"
+2026-05-10 21:10:16 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2026-05-10 21:10:16 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-05-10 21:10:16 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-05-10 21:10:16 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2026-05-10 21:10:16 [main] INFO  c.o.c.controllers.UserControllerTest - Started UserControllerTest in 0.323 seconds (process running for 4.574)
+2026-05-10 21:10:16 [main] INFO  c.o.c.services.UserService - Creating user: john
+2026-05-10 21:10:16 [main] INFO  c.o.c.services.UserService - Looking up user by username: unknown
+2026-05-10 21:10:16 [main] WARN  c.o.c.services.UserService - Deleting user with id: 1
+2026-05-10 21:10:16 [main] INFO  c.o.c.services.UserService - Looking up user by username: john
+2026-05-10 21:10:16 [main] INFO  c.o.c.services.CourseService - Fetching all courses
+2026-05-10 21:10:16 [main] WARN  c.o.c.services.CourseService - Deleting course with id: 1
+2026-05-10 21:10:16 [main] INFO  c.o.c.services.CourseService - Creating course: CS101
+2026-05-10 21:10:16 [main] WARN  c.o.c.services.ScheduleService - Removing schedule entry id: 1
+2026-05-10 21:10:16 [main] INFO  c.o.c.services.ScheduleService - Adding course to schdule for user id: null
+2026-05-10 21:10:16 [main] INFO  c.o.c.services.ScheduleService - Fetching schedule for user id: 1
+2026-05-10 21:10:16 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-10 21:10:16 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-10 21:10:16 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-10 21:11:16 [main] INFO  c.o.c.CoursefriendsApplicationTests - Starting CoursefriendsApplicationTests using Java 23 with PID 761 (started by oaksoe in /Users/oaksoe/coursefriends)
+2026-05-10 21:11:16 [main] INFO  c.o.c.CoursefriendsApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2026-05-10 21:11:16 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-10 21:11:16 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 30 ms. Found 3 JPA repository interfaces.
+2026-05-10 21:11:17 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-10 21:11:17 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.49.Final
+2026-05-10 21:11:17 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-05-10 21:11:17 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-10 21:11:17 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-10 21:11:17 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@34195ce5
+2026-05-10 21:11:17 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-10 21:11:17 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-10 21:11:17 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 18.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-10 21:11:18 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-10 21:11:18 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-10 21:11:18 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-10 21:11:18 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2026-05-10 21:11:19 [main] INFO  c.o.c.CoursefriendsApplicationTests - Started CoursefriendsApplicationTests in 3.082 seconds (process running for 3.892)
+2026-05-10 21:11:19 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.oak.coursefriends.controllers.UserControllerTest]: UserControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-10 21:11:19 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.oak.coursefriends.CoursefriendsApplication for test class com.oak.coursefriends.controllers.UserControllerTest
+2026-05-10 21:11:19 [main] INFO  m.p.s.DotenvPropertySource - Initialized Dotenv with DotenvConfig{directory=null, filename=null, ignoreIfMalformed=false, ignoreIfMissing=true, systemProperties=false, prefix=null}
+2026-05-10 21:11:19 [main] INFO  c.o.c.controllers.UserControllerTest - Starting UserControllerTest using Java 23 with PID 761 (started by oaksoe in /Users/oaksoe/coursefriends)
+2026-05-10 21:11:19 [main] INFO  c.o.c.controllers.UserControllerTest - No active profile set, falling back to 1 default profile: "default"
+2026-05-10 21:11:19 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2026-05-10 21:11:19 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-05-10 21:11:19 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-05-10 21:11:19 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2026-05-10 21:11:19 [main] INFO  c.o.c.controllers.UserControllerTest - Started UserControllerTest in 0.315 seconds (process running for 4.533)
+2026-05-10 21:11:20 [main] INFO  c.o.c.services.UserService - Creating user: john
+2026-05-10 21:11:20 [main] INFO  c.o.c.services.UserService - Looking up user by username: unknown
+2026-05-10 21:11:20 [main] WARN  c.o.c.services.UserService - Deleting user with id: 1
+2026-05-10 21:11:20 [main] INFO  c.o.c.services.UserService - Looking up user by username: john
+2026-05-10 21:11:20 [main] INFO  c.o.c.services.CourseService - Fetching all courses
+2026-05-10 21:11:20 [main] WARN  c.o.c.services.CourseService - Deleting course with id: 1
+2026-05-10 21:11:20 [main] INFO  c.o.c.services.CourseService - Creating course: CS101
+2026-05-10 21:11:20 [main] WARN  c.o.c.services.ScheduleService - Removing schedule entry id: 1
+2026-05-10 21:11:20 [main] INFO  c.o.c.services.ScheduleService - Adding course to schdule for user id: null
+2026-05-10 21:11:20 [main] INFO  c.o.c.services.ScheduleService - Fetching schedule for user id: 1
+2026-05-10 21:11:20 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-10 21:11:20 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-10 21:11:20 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-10 21:12:47 [main] INFO  c.o.c.CoursefriendsApplicationTests - Starting CoursefriendsApplicationTests using Java 23 with PID 1448 (started by oaksoe in /Users/oaksoe/coursefriends)
+2026-05-10 21:12:47 [main] INFO  c.o.c.CoursefriendsApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2026-05-10 21:12:47 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-10 21:12:47 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 28 ms. Found 3 JPA repository interfaces.
+2026-05-10 21:12:48 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-10 21:12:48 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.49.Final
+2026-05-10 21:12:48 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-05-10 21:12:48 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-10 21:12:48 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-10 21:12:48 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@795239f9
+2026-05-10 21:12:48 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-10 21:12:48 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-10 21:12:48 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 18.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-10 21:12:49 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-10 21:12:49 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-10 21:12:49 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-10 21:12:49 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2026-05-10 21:12:49 [main] INFO  c.o.c.CoursefriendsApplicationTests - Started CoursefriendsApplicationTests in 2.982 seconds (process running for 3.869)
+2026-05-10 21:12:50 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.oak.coursefriends.controllers.UserControllerTest]: UserControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-10 21:12:50 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.oak.coursefriends.CoursefriendsApplication for test class com.oak.coursefriends.controllers.UserControllerTest
+2026-05-10 21:12:50 [main] INFO  m.p.s.DotenvPropertySource - Initialized Dotenv with DotenvConfig{directory=null, filename=null, ignoreIfMalformed=false, ignoreIfMissing=true, systemProperties=false, prefix=null}
+2026-05-10 21:12:50 [main] INFO  c.o.c.controllers.UserControllerTest - Starting UserControllerTest using Java 23 with PID 1448 (started by oaksoe in /Users/oaksoe/coursefriends)
+2026-05-10 21:12:50 [main] INFO  c.o.c.controllers.UserControllerTest - No active profile set, falling back to 1 default profile: "default"
+2026-05-10 21:12:50 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2026-05-10 21:12:50 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-05-10 21:12:50 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-05-10 21:12:50 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2026-05-10 21:12:50 [main] INFO  c.o.c.controllers.UserControllerTest - Started UserControllerTest in 0.369 seconds (process running for 4.553)
+2026-05-10 21:12:50 [main] INFO  c.o.c.services.UserService - Creating user: john
+2026-05-10 21:12:50 [main] INFO  c.o.c.services.UserService - Looking up user by username: unknown
+2026-05-10 21:12:50 [main] WARN  c.o.c.services.UserService - Deleting user with id: 1
+2026-05-10 21:12:50 [main] INFO  c.o.c.services.UserService - Looking up user by username: john
+2026-05-10 21:12:51 [main] INFO  c.o.c.services.CourseService - Fetching all courses
+2026-05-10 21:12:51 [main] WARN  c.o.c.services.CourseService - Deleting course with id: 1
+2026-05-10 21:12:51 [main] INFO  c.o.c.services.CourseService - Creating course: CS101
+2026-05-10 21:12:51 [main] WARN  c.o.c.services.ScheduleService - Removing schedule entry id: 1
+2026-05-10 21:12:51 [main] INFO  c.o.c.services.ScheduleService - Adding course to schdule for user id: null
+2026-05-10 21:12:51 [main] INFO  c.o.c.services.ScheduleService - Fetching schedule for user id: 1
+2026-05-10 21:12:51 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-10 21:12:51 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-10 21:12:51 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-10 21:14:34 [main] INFO  c.o.c.CoursefriendsApplicationTests - Starting CoursefriendsApplicationTests using Java 23 with PID 2118 (started by oaksoe in /Users/oaksoe/coursefriends)
+2026-05-10 21:14:34 [main] INFO  c.o.c.CoursefriendsApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2026-05-10 21:14:34 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-10 21:14:34 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 31 ms. Found 3 JPA repository interfaces.
+2026-05-10 21:14:35 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-10 21:14:35 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.49.Final
+2026-05-10 21:14:35 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-05-10 21:14:35 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-10 21:14:35 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-10 21:14:35 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5f638200
+2026-05-10 21:14:35 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-10 21:14:35 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-10 21:14:35 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 18.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-10 21:14:36 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-10 21:14:36 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-10 21:14:36 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-10 21:14:36 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2026-05-10 21:14:37 [main] INFO  c.o.c.CoursefriendsApplicationTests - Started CoursefriendsApplicationTests in 3.149 seconds (process running for 3.946)
+2026-05-10 21:14:37 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.oak.coursefriends.controllers.UserControllerTest]: UserControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-10 21:14:37 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.oak.coursefriends.CoursefriendsApplication for test class com.oak.coursefriends.controllers.UserControllerTest
+2026-05-10 21:14:37 [main] INFO  m.p.s.DotenvPropertySource - Initialized Dotenv with DotenvConfig{directory=null, filename=null, ignoreIfMalformed=false, ignoreIfMissing=true, systemProperties=false, prefix=null}
+2026-05-10 21:14:37 [main] INFO  c.o.c.controllers.UserControllerTest - Starting UserControllerTest using Java 23 with PID 2118 (started by oaksoe in /Users/oaksoe/coursefriends)
+2026-05-10 21:14:37 [main] INFO  c.o.c.controllers.UserControllerTest - No active profile set, falling back to 1 default profile: "default"
+2026-05-10 21:14:37 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2026-05-10 21:14:37 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-05-10 21:14:37 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-05-10 21:14:37 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2026-05-10 21:14:37 [main] INFO  c.o.c.controllers.UserControllerTest - Started UserControllerTest in 0.313 seconds (process running for 4.649)
+2026-05-10 21:14:38 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.oak.coursefriends.controllers.CourseControllerTest]: CourseControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-10 21:14:38 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.oak.coursefriends.CoursefriendsApplication for test class com.oak.coursefriends.controllers.CourseControllerTest
+2026-05-10 21:14:38 [main] INFO  m.p.s.DotenvPropertySource - Initialized Dotenv with DotenvConfig{directory=null, filename=null, ignoreIfMalformed=false, ignoreIfMissing=true, systemProperties=false, prefix=null}
+2026-05-10 21:14:38 [main] INFO  c.o.c.c.CourseControllerTest - Starting CourseControllerTest using Java 23 with PID 2118 (started by oaksoe in /Users/oaksoe/coursefriends)
+2026-05-10 21:14:38 [main] INFO  c.o.c.c.CourseControllerTest - No active profile set, falling back to 1 default profile: "default"
+2026-05-10 21:14:38 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2026-05-10 21:14:38 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-05-10 21:14:38 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-05-10 21:14:38 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2026-05-10 21:14:38 [main] INFO  c.o.c.c.CourseControllerTest - Started CourseControllerTest in 0.162 seconds (process running for 5.058)
+2026-05-10 21:14:38 [main] INFO  c.o.c.services.UserService - Creating user: john
+2026-05-10 21:14:38 [main] INFO  c.o.c.services.UserService - Looking up user by username: unknown
+2026-05-10 21:14:38 [main] WARN  c.o.c.services.UserService - Deleting user with id: 1
+2026-05-10 21:14:38 [main] INFO  c.o.c.services.UserService - Looking up user by username: john
+2026-05-10 21:14:38 [main] INFO  c.o.c.services.CourseService - Fetching all courses
+2026-05-10 21:14:38 [main] WARN  c.o.c.services.CourseService - Deleting course with id: 1
+2026-05-10 21:14:38 [main] INFO  c.o.c.services.CourseService - Creating course: CS101
+2026-05-10 21:14:38 [main] WARN  c.o.c.services.ScheduleService - Removing schedule entry id: 1
+2026-05-10 21:14:38 [main] INFO  c.o.c.services.ScheduleService - Adding course to schdule for user id: null
+2026-05-10 21:14:38 [main] INFO  c.o.c.services.ScheduleService - Fetching schedule for user id: 1
+2026-05-10 21:14:38 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-10 21:14:38 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-10 21:14:38 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-10 21:15:55 [main] INFO  c.o.c.CoursefriendsApplicationTests - Starting CoursefriendsApplicationTests using Java 23 with PID 2661 (started by oaksoe in /Users/oaksoe/coursefriends)
+2026-05-10 21:15:55 [main] INFO  c.o.c.CoursefriendsApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2026-05-10 21:15:55 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-10 21:15:55 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 28 ms. Found 3 JPA repository interfaces.
+2026-05-10 21:15:55 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-10 21:15:55 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.49.Final
+2026-05-10 21:15:55 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-05-10 21:15:56 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-10 21:15:56 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-10 21:15:56 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@28c319a2
+2026-05-10 21:15:56 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-10 21:15:56 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-10 21:15:56 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 18.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-10 21:15:57 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-10 21:15:57 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-10 21:15:57 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-10 21:15:57 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2026-05-10 21:15:57 [main] INFO  c.o.c.CoursefriendsApplicationTests - Started CoursefriendsApplicationTests in 3.118 seconds (process running for 3.867)
+2026-05-10 21:15:58 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.oak.coursefriends.controllers.UserControllerTest]: UserControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-10 21:15:58 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.oak.coursefriends.CoursefriendsApplication for test class com.oak.coursefriends.controllers.UserControllerTest
+2026-05-10 21:15:58 [main] INFO  m.p.s.DotenvPropertySource - Initialized Dotenv with DotenvConfig{directory=null, filename=null, ignoreIfMalformed=false, ignoreIfMissing=true, systemProperties=false, prefix=null}
+2026-05-10 21:15:58 [main] INFO  c.o.c.controllers.UserControllerTest - Starting UserControllerTest using Java 23 with PID 2661 (started by oaksoe in /Users/oaksoe/coursefriends)
+2026-05-10 21:15:58 [main] INFO  c.o.c.controllers.UserControllerTest - No active profile set, falling back to 1 default profile: "default"
+2026-05-10 21:15:58 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2026-05-10 21:15:58 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-05-10 21:15:58 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-05-10 21:15:58 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2026-05-10 21:15:58 [main] INFO  c.o.c.controllers.UserControllerTest - Started UserControllerTest in 0.302 seconds (process running for 4.479)
+2026-05-10 21:15:58 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.oak.coursefriends.controllers.CourseControllerTest]: CourseControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-10 21:15:58 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.oak.coursefriends.CoursefriendsApplication for test class com.oak.coursefriends.controllers.CourseControllerTest
+2026-05-10 21:15:58 [main] INFO  m.p.s.DotenvPropertySource - Initialized Dotenv with DotenvConfig{directory=null, filename=null, ignoreIfMalformed=false, ignoreIfMissing=true, systemProperties=false, prefix=null}
+2026-05-10 21:15:58 [main] INFO  c.o.c.c.CourseControllerTest - Starting CourseControllerTest using Java 23 with PID 2661 (started by oaksoe in /Users/oaksoe/coursefriends)
+2026-05-10 21:15:58 [main] INFO  c.o.c.c.CourseControllerTest - No active profile set, falling back to 1 default profile: "default"
+2026-05-10 21:15:58 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2026-05-10 21:15:58 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-05-10 21:15:58 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-05-10 21:15:58 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2026-05-10 21:15:58 [main] INFO  c.o.c.c.CourseControllerTest - Started CourseControllerTest in 0.167 seconds (process running for 4.884)
+2026-05-10 21:15:59 [main] INFO  c.o.c.services.UserService - Creating user: john
+2026-05-10 21:15:59 [main] INFO  c.o.c.services.UserService - Looking up user by username: unknown
+2026-05-10 21:15:59 [main] WARN  c.o.c.services.UserService - Deleting user with id: 1
+2026-05-10 21:15:59 [main] INFO  c.o.c.services.UserService - Looking up user by username: john
+2026-05-10 21:15:59 [main] INFO  c.o.c.services.CourseService - Fetching all courses
+2026-05-10 21:15:59 [main] WARN  c.o.c.services.CourseService - Deleting course with id: 1
+2026-05-10 21:15:59 [main] INFO  c.o.c.services.CourseService - Creating course: CS101
+2026-05-10 21:15:59 [main] WARN  c.o.c.services.ScheduleService - Removing schedule entry id: 1
+2026-05-10 21:15:59 [main] INFO  c.o.c.services.ScheduleService - Adding course to schdule for user id: null
+2026-05-10 21:15:59 [main] INFO  c.o.c.services.ScheduleService - Fetching schedule for user id: 1
+2026-05-10 21:15:59 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-10 21:15:59 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-10 21:15:59 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-10 21:17:38 [main] INFO  c.o.c.CoursefriendsApplicationTests - Starting CoursefriendsApplicationTests using Java 23 with PID 3365 (started by oaksoe in /Users/oaksoe/coursefriends)
+2026-05-10 21:17:38 [main] INFO  c.o.c.CoursefriendsApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2026-05-10 21:17:39 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-10 21:17:39 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 29 ms. Found 3 JPA repository interfaces.
+2026-05-10 21:17:39 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-10 21:17:39 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.49.Final
+2026-05-10 21:17:39 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-05-10 21:17:39 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-10 21:17:39 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-10 21:17:39 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5f638200
+2026-05-10 21:17:39 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-10 21:17:39 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-10 21:17:39 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 18.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-10 21:17:40 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-10 21:17:40 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-10 21:17:41 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-10 21:17:41 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2026-05-10 21:17:41 [main] INFO  c.o.c.CoursefriendsApplicationTests - Started CoursefriendsApplicationTests in 3.07 seconds (process running for 3.902)
+2026-05-10 21:17:41 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.oak.coursefriends.controllers.UserControllerTest]: UserControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-10 21:17:41 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.oak.coursefriends.CoursefriendsApplication for test class com.oak.coursefriends.controllers.UserControllerTest
+2026-05-10 21:17:41 [main] INFO  m.p.s.DotenvPropertySource - Initialized Dotenv with DotenvConfig{directory=null, filename=null, ignoreIfMalformed=false, ignoreIfMissing=true, systemProperties=false, prefix=null}
+2026-05-10 21:17:41 [main] INFO  c.o.c.controllers.UserControllerTest - Starting UserControllerTest using Java 23 with PID 3365 (started by oaksoe in /Users/oaksoe/coursefriends)
+2026-05-10 21:17:41 [main] INFO  c.o.c.controllers.UserControllerTest - No active profile set, falling back to 1 default profile: "default"
+2026-05-10 21:17:41 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2026-05-10 21:17:42 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-05-10 21:17:42 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-05-10 21:17:42 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2026-05-10 21:17:42 [main] INFO  c.o.c.controllers.UserControllerTest - Started UserControllerTest in 0.308 seconds (process running for 4.556)
+2026-05-10 21:17:42 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.oak.coursefriends.controllers.CourseControllerTest]: CourseControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-10 21:17:42 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.oak.coursefriends.CoursefriendsApplication for test class com.oak.coursefriends.controllers.CourseControllerTest
+2026-05-10 21:17:42 [main] INFO  m.p.s.DotenvPropertySource - Initialized Dotenv with DotenvConfig{directory=null, filename=null, ignoreIfMalformed=false, ignoreIfMissing=true, systemProperties=false, prefix=null}
+2026-05-10 21:17:42 [main] INFO  c.o.c.c.CourseControllerTest - Starting CourseControllerTest using Java 23 with PID 3365 (started by oaksoe in /Users/oaksoe/coursefriends)
+2026-05-10 21:17:42 [main] INFO  c.o.c.c.CourseControllerTest - No active profile set, falling back to 1 default profile: "default"
+2026-05-10 21:17:42 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2026-05-10 21:17:42 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-05-10 21:17:42 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-05-10 21:17:42 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2026-05-10 21:17:42 [main] INFO  c.o.c.c.CourseControllerTest - Started CourseControllerTest in 0.175 seconds (process running for 4.969)
+2026-05-10 21:17:42 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.oak.coursefriends.controllers.ScheduleControllerTest]: ScheduleControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-10 21:17:42 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.oak.coursefriends.CoursefriendsApplication for test class com.oak.coursefriends.controllers.ScheduleControllerTest
+2026-05-10 21:17:42 [main] INFO  m.p.s.DotenvPropertySource - Initialized Dotenv with DotenvConfig{directory=null, filename=null, ignoreIfMalformed=false, ignoreIfMissing=true, systemProperties=false, prefix=null}
+2026-05-10 21:17:42 [main] INFO  c.o.c.c.ScheduleControllerTest - Starting ScheduleControllerTest using Java 23 with PID 3365 (started by oaksoe in /Users/oaksoe/coursefriends)
+2026-05-10 21:17:42 [main] INFO  c.o.c.c.ScheduleControllerTest - No active profile set, falling back to 1 default profile: "default"
+2026-05-10 21:17:42 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2026-05-10 21:17:42 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-05-10 21:17:42 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-05-10 21:17:42 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2026-05-10 21:17:42 [main] INFO  c.o.c.c.ScheduleControllerTest - Started ScheduleControllerTest in 0.143 seconds (process running for 5.148)
+2026-05-10 21:17:42 [main] INFO  c.o.c.services.UserService - Creating user: john
+2026-05-10 21:17:42 [main] INFO  c.o.c.services.UserService - Looking up user by username: unknown
+2026-05-10 21:17:42 [main] WARN  c.o.c.services.UserService - Deleting user with id: 1
+2026-05-10 21:17:42 [main] INFO  c.o.c.services.UserService - Looking up user by username: john
+2026-05-10 21:17:42 [main] INFO  c.o.c.services.CourseService - Fetching all courses
+2026-05-10 21:17:42 [main] WARN  c.o.c.services.CourseService - Deleting course with id: 1
+2026-05-10 21:17:42 [main] INFO  c.o.c.services.CourseService - Creating course: CS101
+2026-05-10 21:17:42 [main] WARN  c.o.c.services.ScheduleService - Removing schedule entry id: 1
+2026-05-10 21:17:42 [main] INFO  c.o.c.services.ScheduleService - Adding course to schdule for user id: null
+2026-05-10 21:17:42 [main] INFO  c.o.c.services.ScheduleService - Fetching schedule for user id: 1
+2026-05-10 21:17:42 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-10 21:17:43 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-10 21:17:43 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-10 21:19:31 [main] INFO  c.o.c.CoursefriendsApplicationTests - Starting CoursefriendsApplicationTests using Java 23 with PID 4015 (started by oaksoe in /Users/oaksoe/coursefriends)
+2026-05-10 21:19:31 [main] INFO  c.o.c.CoursefriendsApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2026-05-10 21:19:32 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-10 21:19:32 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 33 ms. Found 3 JPA repository interfaces.
+2026-05-10 21:19:32 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-10 21:19:32 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.49.Final
+2026-05-10 21:19:32 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-05-10 21:19:33 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-10 21:19:33 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-10 21:19:33 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@315449e6
+2026-05-10 21:19:33 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-10 21:19:33 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-10 21:19:33 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 18.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-10 21:19:33 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-10 21:19:33 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-10 21:19:34 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-10 21:19:34 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2026-05-10 21:19:34 [main] INFO  c.o.c.CoursefriendsApplicationTests - Started CoursefriendsApplicationTests in 3.098 seconds (process running for 3.89)
+2026-05-10 21:19:34 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.oak.coursefriends.controllers.UserControllerTest]: UserControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-10 21:19:34 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.oak.coursefriends.CoursefriendsApplication for test class com.oak.coursefriends.controllers.UserControllerTest
+2026-05-10 21:19:34 [main] INFO  m.p.s.DotenvPropertySource - Initialized Dotenv with DotenvConfig{directory=null, filename=null, ignoreIfMalformed=false, ignoreIfMissing=true, systemProperties=false, prefix=null}
+2026-05-10 21:19:34 [main] INFO  c.o.c.controllers.UserControllerTest - Starting UserControllerTest using Java 23 with PID 4015 (started by oaksoe in /Users/oaksoe/coursefriends)
+2026-05-10 21:19:34 [main] INFO  c.o.c.controllers.UserControllerTest - No active profile set, falling back to 1 default profile: "default"
+2026-05-10 21:19:35 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2026-05-10 21:19:35 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-05-10 21:19:35 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-05-10 21:19:35 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2026-05-10 21:19:35 [main] INFO  c.o.c.controllers.UserControllerTest - Started UserControllerTest in 0.301 seconds (process running for 4.507)
+2026-05-10 21:19:35 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.oak.coursefriends.controllers.CourseControllerTest]: CourseControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-10 21:19:35 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.oak.coursefriends.CoursefriendsApplication for test class com.oak.coursefriends.controllers.CourseControllerTest
+2026-05-10 21:19:35 [main] INFO  m.p.s.DotenvPropertySource - Initialized Dotenv with DotenvConfig{directory=null, filename=null, ignoreIfMalformed=false, ignoreIfMissing=true, systemProperties=false, prefix=null}
+2026-05-10 21:19:35 [main] INFO  c.o.c.c.CourseControllerTest - Starting CourseControllerTest using Java 23 with PID 4015 (started by oaksoe in /Users/oaksoe/coursefriends)
+2026-05-10 21:19:35 [main] INFO  c.o.c.c.CourseControllerTest - No active profile set, falling back to 1 default profile: "default"
+2026-05-10 21:19:35 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2026-05-10 21:19:35 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-05-10 21:19:35 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-05-10 21:19:35 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2026-05-10 21:19:35 [main] INFO  c.o.c.c.CourseControllerTest - Started CourseControllerTest in 0.157 seconds (process running for 4.918)
+2026-05-10 21:19:35 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.oak.coursefriends.controllers.ScheduleControllerTest]: ScheduleControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-10 21:19:35 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.oak.coursefriends.CoursefriendsApplication for test class com.oak.coursefriends.controllers.ScheduleControllerTest
+2026-05-10 21:19:35 [main] INFO  m.p.s.DotenvPropertySource - Initialized Dotenv with DotenvConfig{directory=null, filename=null, ignoreIfMalformed=false, ignoreIfMissing=true, systemProperties=false, prefix=null}
+2026-05-10 21:19:35 [main] INFO  c.o.c.c.ScheduleControllerTest - Starting ScheduleControllerTest using Java 23 with PID 4015 (started by oaksoe in /Users/oaksoe/coursefriends)
+2026-05-10 21:19:35 [main] INFO  c.o.c.c.ScheduleControllerTest - No active profile set, falling back to 1 default profile: "default"
+2026-05-10 21:19:35 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2026-05-10 21:19:35 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-05-10 21:19:35 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-05-10 21:19:35 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2026-05-10 21:19:35 [main] INFO  c.o.c.c.ScheduleControllerTest - Started ScheduleControllerTest in 0.138 seconds (process running for 5.098)
+2026-05-10 21:19:35 [main] INFO  c.o.c.services.UserService - Creating user: john
+2026-05-10 21:19:35 [main] INFO  c.o.c.services.UserService - Looking up user by username: unknown
+2026-05-10 21:19:35 [main] WARN  c.o.c.services.UserService - Deleting user with id: 1
+2026-05-10 21:19:35 [main] INFO  c.o.c.services.UserService - Looking up user by username: john
+2026-05-10 21:19:35 [main] INFO  c.o.c.services.CourseService - Fetching all courses
+2026-05-10 21:19:35 [main] WARN  c.o.c.services.CourseService - Deleting course with id: 1
+2026-05-10 21:19:35 [main] INFO  c.o.c.services.CourseService - Creating course: CS101
+2026-05-10 21:19:36 [main] WARN  c.o.c.services.ScheduleService - Removing schedule entry id: 1
+2026-05-10 21:19:36 [main] INFO  c.o.c.services.ScheduleService - Adding course to schdule for user id: null
+2026-05-10 21:19:36 [main] INFO  c.o.c.services.ScheduleService - Fetching schedule for user id: 1
+2026-05-10 21:19:36 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-10 21:19:36 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-10 21:19:36 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-10 21:23:18 [http-nio-8080-exec-6] INFO  c.o.c.services.UserService - Looking up user by username: OakSoeZaw
+2026-05-10 21:23:18 [http-nio-8080-exec-5] INFO  c.o.c.services.ScheduleService - Fetching schedule for user id: 4
+2026-05-10 21:23:21 [http-nio-8080-exec-1] INFO  c.o.c.services.UserService - Looking up user by username: OakSoeZaw
+2026-05-10 21:23:21 [http-nio-8080-exec-3] INFO  c.o.c.services.ScheduleService - Fetching schedule for user id: 4
+2026-05-10 21:24:03 [http-nio-8080-exec-2] INFO  c.o.c.services.UserService - Looking up user by username: OakSoeZaw
+2026-05-10 21:24:03 [http-nio-8080-exec-4] INFO  c.o.c.services.ScheduleService - Fetching schedule for user id: 4
+2026-05-10 21:24:17 [http-nio-8080-exec-4] INFO  c.o.c.services.UserService - Looking up user by username: OakSoeZaw
+2026-05-10 21:24:17 [http-nio-8080-exec-1] INFO  c.o.c.services.ScheduleService - Fetching schedule for user id: 4
+2026-05-10 21:24:31 [http-nio-8080-exec-1] INFO  c.o.c.services.UserService - Looking up user by username: OakSoeZaw
+2026-05-10 21:24:31 [http-nio-8080-exec-3] INFO  c.o.c.services.ScheduleService - Fetching schedule for user id: 4
+2026-05-10 21:25:07 [http-nio-8080-exec-1] INFO  c.o.c.services.UserService - Looking up user by username: OakSoeZaw
+2026-05-10 21:25:08 [http-nio-8080-exec-3] INFO  c.o.c.services.ScheduleService - Fetching schedule for user id: 4
+2026-05-10 21:25:12 [http-nio-8080-exec-10] INFO  c.o.c.services.UserService - Looking up user by username: OakSoeZaw
+2026-05-10 21:25:12 [http-nio-8080-exec-2] INFO  c.o.c.services.ScheduleService - Fetching schedule for user id: 4
+2026-05-10 21:31:51 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m28s427ms).
+2026-05-10 22:55:50 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h23m58s468ms).
+2026-05-10 23:20:44 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=24m54s799ms).
+2026-05-10 23:20:53 [http-nio-8080-exec-2] INFO  c.o.c.services.UserService - Looking up user by username: OakSoeZaw
+2026-05-10 23:20:53 [http-nio-8080-exec-4] INFO  c.o.c.services.ScheduleService - Fetching schedule for user id: 4

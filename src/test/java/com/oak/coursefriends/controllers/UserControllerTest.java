@@ -1,53 +1,103 @@
 package com.oak.coursefriends.controllers;
 
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.extension.ExtendWith;
-import org.mockito.InjectMocks;
-import org.mockito.Mock;
-import org.mockito.junit.jupiter.MockitoExtension;
-
-import com.oak.coursefriends.repository.UserRepository;
-import com.oak.coursefriends.services.UserService;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.oak.coursefriends.model.User;
-import com.oak.coursefriends.controllers.*;
-
-import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.when;
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
-import static org.junit.jupiter.api.Assertions.assertFalse;
-import static org.mockito.Mockito.times;
+import com.oak.coursefriends.services.UserService;
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
+import org.springframework.http.MediaType;
+import org.springframework.security.test.context.support.WithMockUser;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
+import org.springframework.test.web.servlet.MockMvc;
+import static org.springframework.security.test.web.servlet.request.SecurityMockMvcRequestPostProcessors.oauth2Login;
+import static org.springframework.security.test.web.servlet.request.SecurityMockMvcRequestPostProcessors.csrf;
 
 import java.util.List;
 import java.util.Optional;
 
-@ExtendWith(MockitoExtension.class)
+import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.Mockito.*;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
+
+@WebMvcTest(UserController.class)
 public class UserControllerTest {
 
-    @Mock
+    @Autowired
+    private MockMvc mockMvc;
+
+    @MockitoBean
     private UserService userService;
 
-    @InjectMocks
-    private UserController userController;
+    @Autowired
+    private ObjectMapper objectMapper;
 
     @Test
-    void testGetAllUsers(){
+    @WithMockUser
+    void testGetAllUsers() throws Exception{
         when(userService.getAllUsers()).thenReturn(List.of(new User("john"), new User("soney")));
-        List<User> users = userController.getAllUsers();
-        assertEquals(2, users.size());
+        
+        mockMvc.perform(get("/api/users"))
+            .andExpect(status().isOk())
+            .andExpect(jsonPath("$[0].username").value("john"))
+            .andExpect(jsonPath("$[1].username").value("soney"));
     }
 
     @Test
-    void testCreateUser(){
+    @WithMockUser
+    void testGetUserById_found() throws Exception {
         User user = new User("john");
-        when(userService.createUser(user)).thenReturn(user);
-        User created = userController.createUser(user);
-        assertEquals("john", created.getUsername());
+        when(userService.getUserById(1L)).thenReturn(Optional.of(user));
+
+        mockMvc.perform(get("/api/users/1"))
+            .andExpect(status().isOk())
+            .andExpect(jsonPath("$.username").value("john"));
     }
-    
+
     @Test
-    void testDeleteUser(){
-        userController.deleterUser(1L);
+    @WithMockUser
+    void testGetUserByUsername_found() throws Exception {
+        User user = new User("john");
+        when(userService.getUserByUsername("john")).thenReturn(Optional.of(user));
+
+        mockMvc.perform(get("/api/users/username/john"))
+            .andExpect(status().isOk())
+            .andExpect(jsonPath("$.username").value("john"));
+    }
+
+
+    @Test
+    @WithMockUser
+    void testGetUserByUsername_notFound() throws Exception {
+        when(userService.getUserByUsername("unknown")).thenReturn(Optional.empty());
+
+        mockMvc.perform(get("/api/users/username/unknown"))
+            .andExpect(status().isOk());
+    }
+
+    @Test
+    void testCreateUser() throws Exception {
+        User user = new User("john");
+        when(userService.createUser(any(User.class))).thenReturn(user);
+
+        mockMvc.perform(post("/api/users")
+            .with(oauth2Login())
+            .with(csrf())
+            .contentType(MediaType.APPLICATION_JSON)
+            .content(objectMapper.writeValueAsString(user)))
+            .andExpect(status().isOk())
+            .andExpect(jsonPath("$.username").value("john"));
+    }
+
+    @Test
+    void testDeleteUser() throws Exception {
+        mockMvc.perform(delete("/api/users/1")
+            .with(oauth2Login())
+            .with(csrf()))
+            .andExpect(status().isOk());
+        
         verify(userService, times(1)).deleteUser(1L);
     }
+
 }
