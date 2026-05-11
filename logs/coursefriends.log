@@ -1,0 +1,720 @@
+2026-05-10 17:56:31 [main] INFO  c.o.c.CoursefriendsApplication - Starting CoursefriendsApplication using Java 23 with PID 52835 (/Users/oaksoe/coursefriends/target/classes started by oaksoe in /Users/oaksoe/coursefriends)
+2026-05-10 17:56:31 [main] INFO  c.o.c.CoursefriendsApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-10 17:56:32 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-10 17:56:32 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 3 JPA repository interfaces.
+2026-05-10 17:56:32 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-05-10 17:56:32 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-05-10 17:56:32 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-05-10 17:56:32 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.54]
+2026-05-10 17:56:32 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-05-10 17:56:32 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 521 ms
+2026-05-10 17:56:32 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-10 17:56:32 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.49.Final
+2026-05-10 17:56:32 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-05-10 17:56:32 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-10 17:56:32 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-10 17:56:32 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4768b95c
+2026-05-10 17:56:32 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-10 17:56:33 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-10 17:56:33 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 18.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-10 17:56:33 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-10 17:56:33 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-10 17:56:33 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-10 17:56:33 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2026-05-10 17:56:33 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-05-10 17:56:33 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-05-10 17:56:33 [main] INFO  c.o.c.CoursefriendsApplication - Started CoursefriendsApplication in 2.184 seconds (process running for 2.337)
+2026-05-10 17:56:35 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-10 17:56:35 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-05-10 17:56:35 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2026-05-10 17:56:36 [http-nio-8080-exec-5] INFO  c.o.c.services.UserService - Looking up user by username: OakSoeZaw
+2026-05-10 17:56:36 [http-nio-8080-exec-6] INFO  c.o.c.services.ScheduleService - Fetching schedule for user id: 4
+2026-05-10 17:56:37 [http-nio-8080-exec-7] WARN  c.o.c.services.ScheduleService - Removing schedule entry id: 18
+2026-05-10 17:56:37 [http-nio-8080-exec-8] INFO  c.o.c.services.ScheduleService - Fetching schedule for user id: 4
+2026-05-10 17:56:42 [http-nio-8080-exec-10] INFO  c.o.c.services.UserService - Looking up user by username: OakSoeZaw
+2026-05-10 17:56:42 [http-nio-8080-exec-2] INFO  c.o.c.services.CourseService - Fetching all courses
+2026-05-10 17:56:42 [http-nio-8080-exec-1] INFO  c.o.c.services.ScheduleService - Fetching schedule for user id: 4
+2026-05-10 17:56:45 [http-nio-8080-exec-3] INFO  c.o.c.services.ScheduleService - Adding course to schdule for user id: 4
+2026-05-10 17:56:45 [http-nio-8080-exec-4] INFO  c.o.c.services.CourseService - Fetching all courses
+2026-05-10 17:56:45 [http-nio-8080-exec-5] INFO  c.o.c.services.ScheduleService - Fetching schedule for user id: 4
+2026-05-10 17:56:47 [http-nio-8080-exec-6] INFO  c.o.c.services.ScheduleService - Adding course to schdule for user id: 4
+2026-05-10 17:56:47 [http-nio-8080-exec-7] INFO  c.o.c.services.CourseService - Fetching all courses
+2026-05-10 17:56:47 [http-nio-8080-exec-8] INFO  c.o.c.services.ScheduleService - Fetching schedule for user id: 4
+2026-05-10 17:56:50 [http-nio-8080-exec-10] INFO  c.o.c.services.UserService - Looking up user by username: OakSoeZaw
+2026-05-10 17:56:50 [http-nio-8080-exec-2] INFO  c.o.c.services.ScheduleService - Fetching schedule for user id: 4
+2026-05-10 17:56:54 [http-nio-8080-exec-3] INFO  c.o.c.services.UserService - Looking up user by username: OakSoeZaw
+2026-05-10 17:56:54 [http-nio-8080-exec-1] INFO  c.o.c.services.ScheduleService - Fetching schedule for user id: 4
+2026-05-10 17:57:34 [http-nio-8080-exec-4] WARN  c.o.c.services.ScheduleService - Removing schedule entry id: 26
+2026-05-10 17:57:34 [http-nio-8080-exec-5] INFO  c.o.c.services.ScheduleService - Fetching schedule for user id: 4
+2026-05-10 18:06:53 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-10 18:06:53 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-05-10 18:06:53 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-10 18:06:53 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-10 18:06:53 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-10 18:07:00 [main] INFO  c.o.c.CoursefriendsApplicationTests - Starting CoursefriendsApplicationTests using Java 23 with PID 55329 (started by oaksoe in /Users/oaksoe/coursefriends)
+2026-05-10 18:07:00 [main] INFO  c.o.c.CoursefriendsApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2026-05-10 18:07:00 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-10 18:07:00 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 3 JPA repository interfaces.
+2026-05-10 18:07:01 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-10 18:07:01 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.49.Final
+2026-05-10 18:07:01 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-05-10 18:07:01 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-10 18:07:01 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-10 18:07:01 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@49d543a9
+2026-05-10 18:07:01 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-10 18:07:01 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-10 18:07:01 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 18.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-10 18:07:01 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-10 18:07:01 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-10 18:07:01 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-10 18:07:01 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2026-05-10 18:07:02 [main] INFO  c.o.c.CoursefriendsApplicationTests - Started CoursefriendsApplicationTests in 1.917 seconds (process running for 2.346)
+2026-05-10 18:07:02 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-10 18:07:02 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-10 18:07:02 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-10 18:08:45 [main] INFO  c.o.c.CoursefriendsApplicationTests - Starting CoursefriendsApplicationTests using Java 23 with PID 55908 (started by oaksoe in /Users/oaksoe/coursefriends)
+2026-05-10 18:08:45 [main] INFO  c.o.c.CoursefriendsApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2026-05-10 18:08:45 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-10 18:08:45 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 31 ms. Found 3 JPA repository interfaces.
+2026-05-10 18:08:46 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-10 18:08:46 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.49.Final
+2026-05-10 18:08:46 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-05-10 18:08:46 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-10 18:08:46 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-10 18:08:46 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@749635e9
+2026-05-10 18:08:46 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-10 18:08:46 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-10 18:08:46 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 18.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-10 18:08:47 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-10 18:08:47 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-10 18:08:47 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-10 18:08:47 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2026-05-10 18:08:48 [main] INFO  c.o.c.CoursefriendsApplicationTests - Started CoursefriendsApplicationTests in 3.04 seconds (process running for 3.86)
+2026-05-10 18:08:48 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-10 18:08:48 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-10 18:08:48 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-10 18:11:49 [main] INFO  c.o.c.CoursefriendsApplicationTests - Starting CoursefriendsApplicationTests using Java 23 with PID 56901 (started by oaksoe in /Users/oaksoe/coursefriends)
+2026-05-10 18:11:49 [main] INFO  c.o.c.CoursefriendsApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2026-05-10 18:11:50 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-10 18:11:50 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 30 ms. Found 3 JPA repository interfaces.
+2026-05-10 18:11:50 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-10 18:11:50 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.49.Final
+2026-05-10 18:11:50 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-05-10 18:11:50 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-10 18:11:50 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-10 18:11:51 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@739174f1
+2026-05-10 18:11:51 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-10 18:11:51 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-10 18:11:51 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 18.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-10 18:11:51 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-10 18:11:51 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-10 18:11:52 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-10 18:11:52 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2026-05-10 18:11:52 [main] INFO  c.o.c.CoursefriendsApplicationTests - Started CoursefriendsApplicationTests in 3.038 seconds (process running for 3.832)
+2026-05-10 18:11:52 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-10 18:11:53 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-10 18:11:53 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-10 18:14:17 [main] INFO  c.o.c.CoursefriendsApplicationTests - Starting CoursefriendsApplicationTests using Java 23 with PID 57729 (started by oaksoe in /Users/oaksoe/coursefriends)
+2026-05-10 18:14:17 [main] INFO  c.o.c.CoursefriendsApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2026-05-10 18:14:18 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-10 18:14:18 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 30 ms. Found 3 JPA repository interfaces.
+2026-05-10 18:14:18 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-10 18:14:18 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.49.Final
+2026-05-10 18:14:18 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-05-10 18:14:19 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-10 18:14:19 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-10 18:14:19 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7a3c2341
+2026-05-10 18:14:19 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-10 18:14:19 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-10 18:14:19 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 18.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-10 18:14:20 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-10 18:14:20 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-10 18:14:20 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-10 18:14:20 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2026-05-10 18:14:20 [main] INFO  c.o.c.CoursefriendsApplicationTests - Started CoursefriendsApplicationTests in 3.245 seconds (process running for 3.985)
+2026-05-10 18:14:21 [main] INFO  c.o.c.services.UserService - Creating user: john
+2026-05-10 18:14:21 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-10 18:14:21 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-10 18:14:21 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-10 18:18:13 [main] INFO  c.o.c.CoursefriendsApplicationTests - Starting CoursefriendsApplicationTests using Java 23 with PID 59101 (started by oaksoe in /Users/oaksoe/coursefriends)
+2026-05-10 18:18:13 [main] INFO  c.o.c.CoursefriendsApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2026-05-10 18:18:13 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-10 18:18:13 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 30 ms. Found 3 JPA repository interfaces.
+2026-05-10 18:18:14 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-10 18:18:14 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.49.Final
+2026-05-10 18:18:14 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-05-10 18:18:14 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-10 18:18:14 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-10 18:18:14 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@aa7bda6
+2026-05-10 18:18:14 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-10 18:18:14 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-10 18:18:14 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 18.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-10 18:18:15 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-10 18:18:15 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-10 18:18:15 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-10 18:18:15 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2026-05-10 18:18:16 [main] INFO  c.o.c.CoursefriendsApplicationTests - Started CoursefriendsApplicationTests in 3.012 seconds (process running for 3.805)
+2026-05-10 18:18:16 [main] INFO  c.o.c.services.UserService - Creating user: john
+2026-05-10 18:18:16 [main] INFO  c.o.c.services.UserService - Looking up user by username: john
+2026-05-10 18:18:16 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-10 18:18:16 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-10 18:18:16 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-10 18:21:12 [main] INFO  c.o.c.CoursefriendsApplicationTests - Starting CoursefriendsApplicationTests using Java 23 with PID 60072 (started by oaksoe in /Users/oaksoe/coursefriends)
+2026-05-10 18:21:12 [main] INFO  c.o.c.CoursefriendsApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2026-05-10 18:21:13 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-10 18:21:13 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 28 ms. Found 3 JPA repository interfaces.
+2026-05-10 18:21:13 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-10 18:21:13 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.49.Final
+2026-05-10 18:21:13 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-05-10 18:21:13 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-10 18:21:13 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-10 18:21:13 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@134b19ae
+2026-05-10 18:21:13 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-10 18:21:13 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-10 18:21:13 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 18.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-10 18:21:14 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-10 18:21:14 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-10 18:21:14 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-10 18:21:14 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2026-05-10 18:21:15 [main] INFO  c.o.c.CoursefriendsApplicationTests - Started CoursefriendsApplicationTests in 2.946 seconds (process running for 3.731)
+2026-05-10 18:21:15 [main] INFO  c.o.c.services.UserService - Creating user: john
+2026-05-10 18:21:15 [main] INFO  c.o.c.services.UserService - Looking up user by username: unknown
+2026-05-10 18:21:15 [main] INFO  c.o.c.services.UserService - Looking up user by username: john
+2026-05-10 18:21:15 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-10 18:21:15 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-10 18:21:15 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-10 18:23:16 [main] INFO  c.o.c.CoursefriendsApplicationTests - Starting CoursefriendsApplicationTests using Java 23 with PID 60834 (started by oaksoe in /Users/oaksoe/coursefriends)
+2026-05-10 18:23:16 [main] INFO  c.o.c.CoursefriendsApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2026-05-10 18:23:17 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-10 18:23:17 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 29 ms. Found 3 JPA repository interfaces.
+2026-05-10 18:23:17 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-10 18:23:17 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.49.Final
+2026-05-10 18:23:17 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-05-10 18:23:17 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-10 18:23:17 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-10 18:23:17 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@18b25ef3
+2026-05-10 18:23:17 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-10 18:23:17 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-10 18:23:17 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 18.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-10 18:23:18 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-10 18:23:18 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-10 18:23:18 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-10 18:23:18 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2026-05-10 18:23:19 [main] INFO  c.o.c.CoursefriendsApplicationTests - Started CoursefriendsApplicationTests in 3.12 seconds (process running for 3.92)
+2026-05-10 18:23:19 [main] INFO  c.o.c.services.UserService - Creating user: john
+2026-05-10 18:23:19 [main] INFO  c.o.c.services.UserService - Looking up user by username: unknown
+2026-05-10 18:23:19 [main] WARN  c.o.c.services.UserService - Deleting user with id: 1
+2026-05-10 18:23:19 [main] INFO  c.o.c.services.UserService - Looking up user by username: john
+2026-05-10 18:23:19 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-10 18:23:19 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-10 18:23:19 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-10 18:31:03 [main] INFO  c.o.c.CoursefriendsApplicationTests - Starting CoursefriendsApplicationTests using Java 23 with PID 63046 (started by oaksoe in /Users/oaksoe/coursefriends)
+2026-05-10 18:31:03 [main] INFO  c.o.c.CoursefriendsApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2026-05-10 18:31:04 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-10 18:31:04 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 27 ms. Found 3 JPA repository interfaces.
+2026-05-10 18:31:04 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-10 18:31:04 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.49.Final
+2026-05-10 18:31:04 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-05-10 18:31:05 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-10 18:31:05 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-10 18:31:05 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7b28ce3c
+2026-05-10 18:31:05 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-10 18:31:05 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-10 18:31:05 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 18.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-10 18:31:05 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-10 18:31:06 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-10 18:31:06 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-10 18:31:06 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2026-05-10 18:31:06 [main] INFO  c.o.c.CoursefriendsApplicationTests - Started CoursefriendsApplicationTests in 3.027 seconds (process running for 3.795)
+2026-05-10 18:31:07 [main] INFO  c.o.c.services.UserService - Creating user: john
+2026-05-10 18:31:07 [main] INFO  c.o.c.services.UserService - Looking up user by username: unknown
+2026-05-10 18:31:07 [main] WARN  c.o.c.services.UserService - Deleting user with id: 1
+2026-05-10 18:31:07 [main] INFO  c.o.c.services.UserService - Looking up user by username: john
+2026-05-10 18:31:07 [main] INFO  c.o.c.services.CourseService - Fetching all courses
+2026-05-10 18:31:07 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-10 18:31:07 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-10 18:31:07 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-10 18:33:20 [main] INFO  c.o.c.CoursefriendsApplicationTests - Starting CoursefriendsApplicationTests using Java 23 with PID 63860 (started by oaksoe in /Users/oaksoe/coursefriends)
+2026-05-10 18:33:20 [main] INFO  c.o.c.CoursefriendsApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2026-05-10 18:33:21 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-10 18:33:21 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 77 ms. Found 3 JPA repository interfaces.
+2026-05-10 18:33:21 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-10 18:33:21 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.49.Final
+2026-05-10 18:33:21 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-05-10 18:33:22 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-10 18:33:22 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-10 18:33:22 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@48ac2da4
+2026-05-10 18:33:22 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-10 18:33:22 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-10 18:33:22 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 18.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-10 18:33:22 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-10 18:33:22 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-10 18:33:23 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-10 18:33:23 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2026-05-10 18:33:23 [main] INFO  c.o.c.CoursefriendsApplicationTests - Started CoursefriendsApplicationTests in 3.016 seconds (process running for 3.909)
+2026-05-10 18:33:24 [main] INFO  c.o.c.services.UserService - Creating user: john
+2026-05-10 18:33:24 [main] INFO  c.o.c.services.UserService - Looking up user by username: unknown
+2026-05-10 18:33:24 [main] WARN  c.o.c.services.UserService - Deleting user with id: 1
+2026-05-10 18:33:24 [main] INFO  c.o.c.services.UserService - Looking up user by username: john
+2026-05-10 18:33:24 [main] INFO  c.o.c.services.CourseService - Fetching all courses
+2026-05-10 18:33:24 [main] INFO  c.o.c.services.CourseService - Creating course: CS101
+2026-05-10 18:33:24 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-10 18:33:24 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-10 18:33:24 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-10 19:07:02 [main] INFO  c.o.c.CoursefriendsApplicationTests - Starting CoursefriendsApplicationTests using Java 23 with PID 67953 (started by oaksoe in /Users/oaksoe/coursefriends)
+2026-05-10 19:07:02 [main] INFO  c.o.c.CoursefriendsApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2026-05-10 19:07:02 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-10 19:07:02 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 33 ms. Found 3 JPA repository interfaces.
+2026-05-10 19:07:03 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-10 19:07:03 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.49.Final
+2026-05-10 19:07:03 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-05-10 19:07:03 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-10 19:07:03 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-10 19:07:03 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@60fc87e8
+2026-05-10 19:07:03 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-10 19:07:03 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-10 19:07:03 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 18.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-10 19:07:04 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-10 19:07:04 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-10 19:07:04 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-10 19:07:04 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2026-05-10 19:07:05 [main] INFO  c.o.c.CoursefriendsApplicationTests - Started CoursefriendsApplicationTests in 3.211 seconds (process running for 4.323)
+2026-05-10 19:07:05 [main] INFO  c.o.c.services.UserService - Creating user: john
+2026-05-10 19:07:05 [main] INFO  c.o.c.services.UserService - Looking up user by username: unknown
+2026-05-10 19:07:05 [main] WARN  c.o.c.services.UserService - Deleting user with id: 1
+2026-05-10 19:07:05 [main] INFO  c.o.c.services.UserService - Looking up user by username: john
+2026-05-10 19:07:05 [main] INFO  c.o.c.services.CourseService - Fetching all courses
+2026-05-10 19:07:05 [main] WARN  c.o.c.services.CourseService - Deleting course with id: 1
+2026-05-10 19:07:05 [main] INFO  c.o.c.services.CourseService - Creating course: CS101
+2026-05-10 19:07:05 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-10 19:07:05 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-10 19:07:05 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-10 19:13:58 [main] INFO  c.o.c.CoursefriendsApplicationTests - Starting CoursefriendsApplicationTests using Java 23 with PID 69943 (started by oaksoe in /Users/oaksoe/coursefriends)
+2026-05-10 19:13:58 [main] INFO  c.o.c.CoursefriendsApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2026-05-10 19:13:59 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-10 19:13:59 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 29 ms. Found 3 JPA repository interfaces.
+2026-05-10 19:13:59 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-10 19:13:59 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.49.Final
+2026-05-10 19:13:59 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-05-10 19:13:59 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-10 19:13:59 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-10 19:14:00 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@23180ee3
+2026-05-10 19:14:00 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-10 19:14:00 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-10 19:14:00 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 18.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-10 19:14:00 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-10 19:14:00 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-10 19:14:01 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-10 19:14:01 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2026-05-10 19:14:01 [main] INFO  c.o.c.CoursefriendsApplicationTests - Started CoursefriendsApplicationTests in 3.11 seconds (process running for 4.001)
+2026-05-10 19:14:01 [main] INFO  c.o.c.services.UserService - Creating user: john
+2026-05-10 19:14:01 [main] INFO  c.o.c.services.UserService - Looking up user by username: unknown
+2026-05-10 19:14:01 [main] WARN  c.o.c.services.UserService - Deleting user with id: 1
+2026-05-10 19:14:01 [main] INFO  c.o.c.services.UserService - Looking up user by username: john
+2026-05-10 19:14:02 [main] INFO  c.o.c.services.CourseService - Fetching all courses
+2026-05-10 19:14:02 [main] WARN  c.o.c.services.CourseService - Deleting course with id: 1
+2026-05-10 19:14:02 [main] INFO  c.o.c.services.CourseService - Creating course: CS101
+2026-05-10 19:14:02 [main] INFO  c.o.c.services.ScheduleService - Fetching schedule for user id: 1
+2026-05-10 19:14:02 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-10 19:14:02 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-10 19:14:02 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-10 19:18:09 [main] INFO  c.o.c.CoursefriendsApplicationTests - Starting CoursefriendsApplicationTests using Java 23 with PID 71315 (started by oaksoe in /Users/oaksoe/coursefriends)
+2026-05-10 19:18:09 [main] INFO  c.o.c.CoursefriendsApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2026-05-10 19:18:10 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-10 19:18:10 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 34 ms. Found 3 JPA repository interfaces.
+2026-05-10 19:18:10 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-10 19:18:10 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.49.Final
+2026-05-10 19:18:10 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-05-10 19:18:10 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-10 19:18:10 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-10 19:18:11 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5793cd84
+2026-05-10 19:18:11 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-10 19:18:11 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-10 19:18:11 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 18.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-10 19:18:11 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-10 19:18:11 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-10 19:18:12 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-10 19:18:12 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2026-05-10 19:18:12 [main] INFO  c.o.c.CoursefriendsApplicationTests - Started CoursefriendsApplicationTests in 3.298 seconds (process running for 4.48)
+2026-05-10 19:18:13 [main] INFO  c.o.c.services.UserService - Creating user: john
+2026-05-10 19:18:13 [main] INFO  c.o.c.services.UserService - Looking up user by username: unknown
+2026-05-10 19:18:13 [main] WARN  c.o.c.services.UserService - Deleting user with id: 1
+2026-05-10 19:18:13 [main] INFO  c.o.c.services.UserService - Looking up user by username: john
+2026-05-10 19:18:13 [main] INFO  c.o.c.services.CourseService - Fetching all courses
+2026-05-10 19:18:13 [main] WARN  c.o.c.services.CourseService - Deleting course with id: 1
+2026-05-10 19:18:13 [main] INFO  c.o.c.services.CourseService - Creating course: CS101
+2026-05-10 19:18:13 [main] WARN  c.o.c.services.ScheduleService - Removing schedule entry id: 1
+2026-05-10 19:18:13 [main] INFO  c.o.c.services.ScheduleService - Adding course to schdule for user id: null
+2026-05-10 19:18:13 [main] INFO  c.o.c.services.ScheduleService - Fetching schedule for user id: 1
+2026-05-10 19:18:13 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-10 19:18:13 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-10 19:18:13 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-10 19:35:51 [main] INFO  c.o.c.CoursefriendsApplication - Starting CoursefriendsApplication using Java 23 with PID 75515 (/Users/oaksoe/coursefriends/target/classes started by oaksoe in /Users/oaksoe/coursefriends)
+2026-05-10 19:35:51 [main] INFO  c.o.c.CoursefriendsApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-10 19:35:51 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-10 19:35:51 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 3 JPA repository interfaces.
+2026-05-10 19:35:51 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-05-10 19:35:51 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-05-10 19:35:51 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-05-10 19:35:51 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.54]
+2026-05-10 19:35:51 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-05-10 19:35:51 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 512 ms
+2026-05-10 19:35:51 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-10 19:35:51 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.49.Final
+2026-05-10 19:35:51 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-05-10 19:35:51 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-10 19:35:51 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-10 19:35:51 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@137a4b54
+2026-05-10 19:35:51 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-10 19:35:51 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-10 19:35:51 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 18.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-10 19:35:52 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-10 19:35:52 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-10 19:35:52 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-10 19:35:52 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2026-05-10 19:35:52 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-05-10 19:35:52 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-05-10 19:35:52 [main] INFO  c.o.c.CoursefriendsApplication - Started CoursefriendsApplication in 2.004 seconds (process running for 2.147)
+2026-05-10 19:35:55 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-10 19:35:55 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-05-10 19:35:55 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-05-10 19:35:56 [http-nio-8080-exec-7] INFO  c.o.c.services.UserService - Looking up user by username: OakSoeZaw
+2026-05-10 19:35:56 [http-nio-8080-exec-8] INFO  c.o.c.services.ScheduleService - Fetching schedule for user id: 4
+2026-05-10 19:35:59 [http-nio-8080-exec-5] INFO  c.o.c.services.UserService - Looking up user by username: OakSoeZaw
+2026-05-10 19:35:59 [http-nio-8080-exec-7] INFO  c.o.c.services.ScheduleService - Fetching schedule for user id: 4
+2026-05-10 19:36:17 [http-nio-8080-exec-3] INFO  c.o.c.services.UserService - Looking up user by username: Kao02
+2026-05-10 19:36:17 [http-nio-8080-exec-6] INFO  c.o.c.services.ScheduleService - Fetching schedule for user id: 5
+2026-05-10 19:36:22 [http-nio-8080-exec-4] INFO  c.o.c.services.UserService - Looking up user by username: Kao02
+2026-05-10 19:36:22 [http-nio-8080-exec-3] INFO  c.o.c.services.ScheduleService - Fetching schedule for user id: 5
+2026-05-10 19:36:23 [http-nio-8080-exec-6] WARN  c.o.c.services.ScheduleService - Removing schedule entry id: 23
+2026-05-10 19:36:23 [http-nio-8080-exec-5] INFO  c.o.c.services.ScheduleService - Fetching schedule for user id: 5
+2026-05-10 19:36:24 [http-nio-8080-exec-8] INFO  c.o.c.services.UserService - Looking up user by username: Kao02
+2026-05-10 19:36:24 [http-nio-8080-exec-9] INFO  c.o.c.services.ScheduleService - Fetching schedule for user id: 5
+2026-05-10 19:36:25 [http-nio-8080-exec-4] INFO  c.o.c.services.UserService - Looking up user by username: Kao02
+2026-05-10 19:36:25 [http-nio-8080-exec-6] INFO  c.o.c.services.ScheduleService - Fetching schedule for user id: 5
+2026-05-10 19:36:25 [http-nio-8080-exec-3] INFO  c.o.c.services.CourseService - Fetching all courses
+2026-05-10 19:36:27 [http-nio-8080-exec-5] INFO  c.o.c.services.ScheduleService - Adding course to schdule for user id: 5
+2026-05-10 19:36:27 [http-nio-8080-exec-7] INFO  c.o.c.services.CourseService - Fetching all courses
+2026-05-10 19:36:27 [http-nio-8080-exec-8] INFO  c.o.c.services.ScheduleService - Fetching schedule for user id: 5
+2026-05-10 19:36:28 [http-nio-8080-exec-9] INFO  c.o.c.services.ScheduleService - Adding course to schdule for user id: 5
+2026-05-10 19:36:28 [http-nio-8080-exec-10] INFO  c.o.c.services.CourseService - Fetching all courses
+2026-05-10 19:36:28 [http-nio-8080-exec-1] INFO  c.o.c.services.ScheduleService - Fetching schedule for user id: 5
+2026-05-10 19:36:30 [http-nio-8080-exec-4] INFO  c.o.c.services.UserService - Looking up user by username: Kao02
+2026-05-10 19:36:30 [http-nio-8080-exec-6] INFO  c.o.c.services.ScheduleService - Fetching schedule for user id: 5
+2026-05-10 19:36:31 [http-nio-8080-exec-3] WARN  c.o.c.services.ScheduleService - Removing schedule entry id: 24
+2026-05-10 19:36:31 [http-nio-8080-exec-5] INFO  c.o.c.services.ScheduleService - Fetching schedule for user id: 5
+2026-05-10 19:36:32 [http-nio-8080-exec-7] WARN  c.o.c.services.ScheduleService - Removing schedule entry id: 25
+2026-05-10 19:36:32 [http-nio-8080-exec-8] INFO  c.o.c.services.ScheduleService - Fetching schedule for user id: 5
+2026-05-10 19:36:32 [http-nio-8080-exec-9] WARN  c.o.c.services.ScheduleService - Removing schedule entry id: 29
+2026-05-10 19:36:32 [http-nio-8080-exec-10] INFO  c.o.c.services.ScheduleService - Fetching schedule for user id: 5
+2026-05-10 19:36:33 [http-nio-8080-exec-1] WARN  c.o.c.services.ScheduleService - Removing schedule entry id: 30
+2026-05-10 19:36:33 [http-nio-8080-exec-2] INFO  c.o.c.services.ScheduleService - Fetching schedule for user id: 5
+2026-05-10 19:36:35 [http-nio-8080-exec-6] INFO  c.o.c.services.UserService - Looking up user by username: Kao02
+2026-05-10 19:36:35 [http-nio-8080-exec-3] INFO  c.o.c.services.ScheduleService - Fetching schedule for user id: 5
+2026-05-10 19:36:36 [http-nio-8080-exec-7] INFO  c.o.c.services.UserService - Looking up user by username: Kao02
+2026-05-10 19:36:36 [http-nio-8080-exec-8] INFO  c.o.c.services.ScheduleService - Fetching schedule for user id: 5
+2026-05-10 19:36:37 [http-nio-8080-exec-10] INFO  c.o.c.services.UserService - Looking up user by username: Kao02
+2026-05-10 19:36:37 [http-nio-8080-exec-1] INFO  c.o.c.services.CourseService - Fetching all courses
+2026-05-10 19:36:37 [http-nio-8080-exec-2] INFO  c.o.c.services.ScheduleService - Fetching schedule for user id: 5
+2026-05-10 19:36:38 [http-nio-8080-exec-4] INFO  c.o.c.services.ScheduleService - Adding course to schdule for user id: 5
+2026-05-10 19:36:38 [http-nio-8080-exec-6] INFO  c.o.c.services.CourseService - Fetching all courses
+2026-05-10 19:36:38 [http-nio-8080-exec-3] INFO  c.o.c.services.ScheduleService - Fetching schedule for user id: 5
+2026-05-10 19:36:39 [http-nio-8080-exec-5] INFO  c.o.c.services.ScheduleService - Adding course to schdule for user id: 5
+2026-05-10 19:36:39 [http-nio-8080-exec-7] INFO  c.o.c.services.CourseService - Fetching all courses
+2026-05-10 19:36:39 [http-nio-8080-exec-8] INFO  c.o.c.services.ScheduleService - Fetching schedule for user id: 5
+2026-05-10 19:36:44 [http-nio-8080-exec-10] INFO  c.o.c.services.UserService - Looking up user by username: Kao02
+2026-05-10 19:36:44 [http-nio-8080-exec-2] INFO  c.o.c.services.ScheduleService - Fetching schedule for user id: 5
+2026-05-10 19:39:40 [http-nio-8080-exec-6] INFO  c.o.c.services.UserService - Looking up user by username: OakSoeZaw
+2026-05-10 19:39:40 [http-nio-8080-exec-5] INFO  c.o.c.services.CourseService - Fetching all courses
+2026-05-10 19:39:40 [http-nio-8080-exec-7] INFO  c.o.c.services.ScheduleService - Fetching schedule for user id: 4
+2026-05-10 19:41:48 [http-nio-8080-exec-10] INFO  c.o.c.services.ScheduleService - Adding course to schdule for user id: 4
+2026-05-10 19:41:48 [http-nio-8080-exec-2] INFO  c.o.c.services.CourseService - Fetching all courses
+2026-05-10 19:41:48 [http-nio-8080-exec-4] INFO  c.o.c.services.ScheduleService - Fetching schedule for user id: 4
+2026-05-10 19:44:44 [main] INFO  c.o.c.CoursefriendsApplicationTests - Starting CoursefriendsApplicationTests using Java 23 with PID 77601 (started by oaksoe in /Users/oaksoe/coursefriends)
+2026-05-10 19:44:44 [main] INFO  c.o.c.CoursefriendsApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2026-05-10 19:44:44 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-10 19:44:44 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 29 ms. Found 3 JPA repository interfaces.
+2026-05-10 19:44:45 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-10 19:44:45 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.49.Final
+2026-05-10 19:44:45 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-05-10 19:44:45 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-10 19:44:45 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-10 19:44:45 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2cca4a87
+2026-05-10 19:44:45 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-10 19:44:45 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-10 19:44:45 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 18.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-10 19:44:46 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-10 19:44:46 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-10 19:44:46 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-10 19:44:46 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2026-05-10 19:44:46 [main] INFO  c.o.c.CoursefriendsApplicationTests - Started CoursefriendsApplicationTests in 3.114 seconds (process running for 3.952)
+2026-05-10 19:44:47 [main] INFO  c.o.c.services.UserService - Creating user: john
+2026-05-10 19:44:47 [main] INFO  c.o.c.services.UserService - Looking up user by username: unknown
+2026-05-10 19:44:47 [main] WARN  c.o.c.services.UserService - Deleting user with id: 1
+2026-05-10 19:44:47 [main] INFO  c.o.c.services.UserService - Looking up user by username: john
+2026-05-10 19:44:47 [main] INFO  c.o.c.services.CourseService - Fetching all courses
+2026-05-10 19:44:47 [main] WARN  c.o.c.services.CourseService - Deleting course with id: 1
+2026-05-10 19:44:47 [main] INFO  c.o.c.services.CourseService - Creating course: CS101
+2026-05-10 19:44:47 [main] WARN  c.o.c.services.ScheduleService - Removing schedule entry id: 1
+2026-05-10 19:44:47 [main] INFO  c.o.c.services.ScheduleService - Adding course to schdule for user id: null
+2026-05-10 19:44:47 [main] INFO  c.o.c.services.ScheduleService - Fetching schedule for user id: 1
+2026-05-10 19:44:47 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-10 19:44:47 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-10 19:44:47 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-10 19:49:10 [main] INFO  c.o.c.CoursefriendsApplicationTests - Starting CoursefriendsApplicationTests using Java 23 with PID 78836 (started by oaksoe in /Users/oaksoe/coursefriends)
+2026-05-10 19:49:10 [main] INFO  c.o.c.CoursefriendsApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2026-05-10 19:49:11 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-10 19:49:11 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 27 ms. Found 3 JPA repository interfaces.
+2026-05-10 19:49:11 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-10 19:49:11 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.49.Final
+2026-05-10 19:49:11 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-05-10 19:49:11 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-10 19:49:11 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-10 19:49:12 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5793cd84
+2026-05-10 19:49:12 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-10 19:49:12 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-10 19:49:12 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 18.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-10 19:49:12 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-10 19:49:12 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-10 19:49:13 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-10 19:49:13 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2026-05-10 19:49:13 [main] INFO  c.o.c.CoursefriendsApplicationTests - Started CoursefriendsApplicationTests in 3.043 seconds (process running for 3.822)
+2026-05-10 19:49:13 [main] INFO  c.o.c.services.UserService - Creating user: john
+2026-05-10 19:49:13 [main] INFO  c.o.c.services.UserService - Looking up user by username: unknown
+2026-05-10 19:49:13 [main] WARN  c.o.c.services.UserService - Deleting user with id: 1
+2026-05-10 19:49:14 [main] INFO  c.o.c.services.UserService - Looking up user by username: john
+2026-05-10 19:49:14 [main] INFO  c.o.c.services.CourseService - Fetching all courses
+2026-05-10 19:49:14 [main] WARN  c.o.c.services.CourseService - Deleting course with id: 1
+2026-05-10 19:49:14 [main] INFO  c.o.c.services.CourseService - Creating course: CS101
+2026-05-10 19:49:14 [main] WARN  c.o.c.services.ScheduleService - Removing schedule entry id: 1
+2026-05-10 19:49:14 [main] INFO  c.o.c.services.ScheduleService - Adding course to schdule for user id: null
+2026-05-10 19:49:14 [main] INFO  c.o.c.services.ScheduleService - Fetching schedule for user id: 1
+2026-05-10 19:49:14 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-10 19:49:14 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-10 19:49:14 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-10 19:50:47 [main] INFO  c.o.c.CoursefriendsApplicationTests - Starting CoursefriendsApplicationTests using Java 23 with PID 79574 (started by oaksoe in /Users/oaksoe/coursefriends)
+2026-05-10 19:50:47 [main] INFO  c.o.c.CoursefriendsApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2026-05-10 19:50:48 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-10 19:50:48 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 33 ms. Found 3 JPA repository interfaces.
+2026-05-10 19:50:48 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-10 19:50:48 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.49.Final
+2026-05-10 19:50:48 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-05-10 19:50:49 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-10 19:50:49 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-10 19:50:49 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2e652f4e
+2026-05-10 19:50:49 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-10 19:50:49 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-10 19:50:49 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 18.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-10 19:50:50 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-10 19:50:50 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-10 19:50:50 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-10 19:50:50 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2026-05-10 19:50:50 [main] INFO  c.o.c.CoursefriendsApplicationTests - Started CoursefriendsApplicationTests in 3.243 seconds (process running for 4.121)
+2026-05-10 19:50:51 [main] INFO  c.o.c.services.UserService - Creating user: john
+2026-05-10 19:50:51 [main] INFO  c.o.c.services.UserService - Looking up user by username: unknown
+2026-05-10 19:50:51 [main] WARN  c.o.c.services.UserService - Deleting user with id: 1
+2026-05-10 19:50:51 [main] INFO  c.o.c.services.UserService - Looking up user by username: john
+2026-05-10 19:50:51 [main] INFO  c.o.c.services.CourseService - Fetching all courses
+2026-05-10 19:50:51 [main] WARN  c.o.c.services.CourseService - Deleting course with id: 1
+2026-05-10 19:50:51 [main] INFO  c.o.c.services.CourseService - Creating course: CS101
+2026-05-10 19:50:51 [main] WARN  c.o.c.services.ScheduleService - Removing schedule entry id: 1
+2026-05-10 19:50:51 [main] INFO  c.o.c.services.ScheduleService - Adding course to schdule for user id: null
+2026-05-10 19:50:51 [main] INFO  c.o.c.services.ScheduleService - Fetching schedule for user id: 1
+2026-05-10 19:50:51 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-10 19:50:51 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-10 19:50:51 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-10 20:15:58 [main] INFO  c.o.c.CoursefriendsApplicationTests - Starting CoursefriendsApplicationTests using Java 23 with PID 85664 (started by oaksoe in /Users/oaksoe/coursefriends)
+2026-05-10 20:15:58 [main] INFO  c.o.c.CoursefriendsApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2026-05-10 20:15:58 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-10 20:15:58 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 28 ms. Found 3 JPA repository interfaces.
+2026-05-10 20:15:58 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-10 20:15:58 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.49.Final
+2026-05-10 20:15:58 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-05-10 20:15:59 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-10 20:15:59 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-10 20:15:59 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4ed2eee1
+2026-05-10 20:15:59 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-10 20:15:59 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-10 20:15:59 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 18.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-10 20:16:00 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-10 20:16:00 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-10 20:16:00 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-10 20:16:00 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2026-05-10 20:16:00 [main] INFO  c.o.c.CoursefriendsApplicationTests - Started CoursefriendsApplicationTests in 3.109 seconds (process running for 3.935)
+2026-05-10 20:16:01 [main] INFO  c.o.c.services.UserService - Creating user: john
+2026-05-10 20:16:01 [main] INFO  c.o.c.services.UserService - Looking up user by username: unknown
+2026-05-10 20:16:01 [main] WARN  c.o.c.services.UserService - Deleting user with id: 1
+2026-05-10 20:16:01 [main] INFO  c.o.c.services.UserService - Looking up user by username: john
+2026-05-10 20:16:01 [main] INFO  c.o.c.services.CourseService - Fetching all courses
+2026-05-10 20:16:01 [main] WARN  c.o.c.services.CourseService - Deleting course with id: 1
+2026-05-10 20:16:01 [main] INFO  c.o.c.services.CourseService - Creating course: CS101
+2026-05-10 20:16:01 [main] WARN  c.o.c.services.ScheduleService - Removing schedule entry id: 1
+2026-05-10 20:16:01 [main] INFO  c.o.c.services.ScheduleService - Adding course to schdule for user id: null
+2026-05-10 20:16:01 [main] INFO  c.o.c.services.ScheduleService - Fetching schedule for user id: 1
+2026-05-10 20:16:01 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-10 20:16:01 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-10 20:16:01 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-10 20:18:56 [main] INFO  c.o.c.CoursefriendsApplicationTests - Starting CoursefriendsApplicationTests using Java 23 with PID 86632 (started by oaksoe in /Users/oaksoe/coursefriends)
+2026-05-10 20:18:56 [main] INFO  c.o.c.CoursefriendsApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2026-05-10 20:18:56 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-10 20:18:56 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 32 ms. Found 3 JPA repository interfaces.
+2026-05-10 20:18:57 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-10 20:18:57 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.49.Final
+2026-05-10 20:18:57 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-05-10 20:18:57 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-10 20:18:57 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-10 20:18:57 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@28459752
+2026-05-10 20:18:57 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-10 20:18:57 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-10 20:18:57 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 18.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-10 20:18:58 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-10 20:18:58 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-10 20:18:58 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-10 20:18:58 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2026-05-10 20:18:58 [main] INFO  c.o.c.CoursefriendsApplicationTests - Started CoursefriendsApplicationTests in 2.95 seconds (process running for 3.749)
+2026-05-10 20:18:59 [main] INFO  c.o.c.services.UserService - Creating user: john
+2026-05-10 20:18:59 [main] INFO  c.o.c.services.UserService - Looking up user by username: unknown
+2026-05-10 20:18:59 [main] WARN  c.o.c.services.UserService - Deleting user with id: 1
+2026-05-10 20:18:59 [main] INFO  c.o.c.services.UserService - Looking up user by username: john
+2026-05-10 20:18:59 [main] INFO  c.o.c.services.CourseService - Fetching all courses
+2026-05-10 20:18:59 [main] WARN  c.o.c.services.CourseService - Deleting course with id: 1
+2026-05-10 20:18:59 [main] INFO  c.o.c.services.CourseService - Creating course: CS101
+2026-05-10 20:18:59 [main] WARN  c.o.c.services.ScheduleService - Removing schedule entry id: 1
+2026-05-10 20:18:59 [main] INFO  c.o.c.services.ScheduleService - Adding course to schdule for user id: null
+2026-05-10 20:18:59 [main] INFO  c.o.c.services.ScheduleService - Fetching schedule for user id: 1
+2026-05-10 20:18:59 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-10 20:18:59 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-10 20:18:59 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
